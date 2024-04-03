@@ -3,6 +3,7 @@ import Image from "next/image";
 import landingleft from "@/public/assets/home/landingLeft.webp";
 import landingright from "@/public/assets/home/landingRight.webp";
 import Button from "/src/components/Button.js";
+
 const Landing = () => {
   return (
     <div className="flex justify-center items-center w-full">
