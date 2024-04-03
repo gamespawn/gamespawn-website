@@ -16,7 +16,7 @@ module.exports = {
       colors: {
         game: {
           black: "#1E1E1E",
-          "blue-100": "#00BDEC",
+          "blue-100": "#49D0F2",
           "blue-200": "#0099C2",
           "blue-300": "#008EBA",
           "blue-400": "#08789A",

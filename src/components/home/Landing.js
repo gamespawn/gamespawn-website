@@ -14,7 +14,7 @@ const Landing = () => {
           {" "}
           UCR&#39;s game development club
         </div>
-        <Button text="join us" background="bg-blue-100" />
+        <Button text="join us" background="bg-game-blue-100" />
       </div>
       <Image alt="right" src={landingright} />
     </div>
