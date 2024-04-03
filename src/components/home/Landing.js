@@ -5,9 +5,11 @@ import landingright from "@/public/assets/home/landingRight.webp";
 import Button from "/src/components/Button.js";
 const Landing = () => {
   return (
-    <div className="flex justify-evenly items-center">
-      <Image alt="left" src={landingleft} />
-      <div className="text-center">
+    <div className="flex justify-center items-center w-full">
+      <div className="w-2/12">
+        <Image alt="left" src={landingleft} />
+      </div>
+      <div className="text-center  w-6/12">
         <div className="font-monda text-4xl font-bold mb-3">Welcome to</div>
         <div className="text-8xl font-russo mb-2">GAMESPAWN</div>
         <div className="font-monda text-4xl mb-16 ">
@@ -16,7 +18,9 @@ const Landing = () => {
         </div>
         <Button text="join us" background="bg-game-blue-100" />
       </div>
-      <Image alt="right" src={landingright} />
+      <div className="w-2/12">
+        <Image className="" alt="right" src={landingright} />
+      </div>
     </div>
   );
 };
