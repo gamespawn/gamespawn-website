@@ -1,7 +1,7 @@
 const Button = ({ text, background }) => {
   return (
     <div
-      className={`inline-block min-w-48 text-center rounded-full font-start p-2 text-white ${background}`}
+      className={`inline-block pr-4 pl-4 text-center rounded-full font-start p-2 text-white ${background}`}
     >
       {text}
     </div>
