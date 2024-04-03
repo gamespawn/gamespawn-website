@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import landingleft from "@/public/assets/home/landingLeft.png";
-import landingright from "@/public/assets/home/landingRight.png";
+import landingleft from "@/public/assets/home/landingLeft.webp";
+import landingright from "@/public/assets/home/landingRight.webp";
 
 const Landing = () => {
   return (
