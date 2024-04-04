@@ -22,7 +22,7 @@ const About = () => {
         </div>
       </div>
       <div>
-        <Image src={image}></Image>
+        <Image src={image} alt="gamespawn"></Image>
       </div>
     </div>
   );
