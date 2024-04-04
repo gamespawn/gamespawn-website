@@ -5,9 +5,9 @@ import landingright from "@/public/assets/home/landingRight.png";
 const Landing = () => {
   return (
     <div className="flex justify-evenly items-center">
-      <Image alt="" src={landingleft} />
+      <Image src={landingleft} />
       Landing
-      <Image alt="" src={landingright} />
+      <Image src={landingright} />
     </div>
   );
 };
