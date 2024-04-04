@@ -2,7 +2,9 @@ import React from "react";
 
 export default function Intro() {
   return (
-    <div className={`flex flex-col text-center font-monda w-[56%]`}>
+    <div
+      className={`flex flex-col text-center font-monda w-8/12 text-lg leading-8`}
+    >
       <p className="my-4">
         Projects are the pride and soul of Gamespawn. They are games made with
         blood, sweat, and tears (hopefully not) made by our brilliant members of
