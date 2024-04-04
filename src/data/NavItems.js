@@ -1,26 +1,30 @@
 export const items = [
   {
+    name: "",
+    link: "/",
+  },
+  {
     name: "home",
-    link: "/src/app/home/page.js",
+    link: "home",
   },
   {
     name: "board",
-    link: "/src/app/board/page.js",
+    link: "board",
   },
   {
     name: "events",
-    link: "src/app/events/page.js",
+    link: "events",
   },
   {
     name: "projects",
-    link: "src/app/projects/page.js",
+    link: "projects",
   },
   {
     name: "assets",
     link: "https://drive.google.com/drive/u/1/folders/1CORrAKgDflCeiEvgjaC63eKB_J64dpC0",
   },
   {
-    name: "join-now",
+    name: "join now",
     link: "https://discord.com/invite/ejzg2Wb",
   },
 ];
