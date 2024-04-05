@@ -17,25 +17,25 @@ const Navigation = () => {
       expand="lg"
       className="bg-game-black flex items-center justify-between w-full"
     >
-      <Navbar.Brand className="flex items-center">
+      <Navbar.Brand className="flex items-center pl-2">
         <Link
           as={Link}
-          className="flex justify-between items-center text-4xl w-full hover:no-underline"
+          className="flex justify-between items-center hover:no-underline"
           href="/"
           onClick={() => {
             setSelected("");
           }}
         >
           <Image src={Logo} alt="Gamespawn logo" className="w-16 pr-3" />
-          <div className="font-russo text-white">GAMESPAWN</div>
+          <div className="font-russo text-white text-4xl">GAMESPAWN</div>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle
-        className=""
+        className="bg-white"
         aria-controls="basic-navbar-nav"
       ></Navbar.Toggle>
-      <Navbar.Collapse className="flex justify-end items-center">
-        <Nav className="">
+      <Navbar.Collapse className="flex lg:justify-end justify-center items-center pr-2">
+        <Nav className="flex items-center">
           {items.map((item, index) => (
             <Nav.Link
               as={Link}
@@ -44,13 +44,20 @@ const Navigation = () => {
               onClick={() => {
                 setSelected(item.name);
               }}
-              className={`font-monda hover:text-game-blue-100 text-2xl py-2 pl-5 ${
-                selected === item.name ? "text-game-blue-100" : "text-white"
+              className={`font-monda hover:!text-game-blue-100 duration-300 text-2xl py-2 ml-5 ${
+                selected === item.name ? "!text-game-blue-100" : "text-white"
               }`}
             >
               {item.name}
             </Nav.Link>
           ))}
+          <Nav.Link
+            as={Link}
+            href="https://discord.com/invite/ejzg2Wb"
+            className="font-monda text-white text-2xl py-2 px-3 ml-5 bg-game-blue-200 hover:bg-game-blue-400 rounded-full"
+          >
+            join now
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

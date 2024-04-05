@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${russo.variable} ${monda.variable} ${start.variable}`}>
         <Navigation />
-        <div> {children}</div>
+        <div className="pt-32"> {children}</div>
         <Footer />
       </body>
     </html>

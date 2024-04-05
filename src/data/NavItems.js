@@ -23,8 +23,4 @@ export const items = [
     name: "assets",
     link: "https://drive.google.com/drive/u/1/folders/1CORrAKgDflCeiEvgjaC63eKB_J64dpC0",
   },
-  {
-    name: "join now",
-    link: "https://discord.com/invite/ejzg2Wb",
-  },
 ];
