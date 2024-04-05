@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import image from "@/public/assets/home/about.png";
+import image from "@/public/assets/home/about.webp";
 
 const About = () => {
   return (
