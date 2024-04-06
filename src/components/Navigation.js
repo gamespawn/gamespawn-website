@@ -36,21 +36,23 @@ const Navigation = () => {
       ></Navbar.Toggle>
       <Navbar.Collapse className="flex lg:justify-end justify-center items-center pr-2">
         <Nav className="flex items-center">
-          {items.map((item, index) => (
-            <Nav.Link
-              as={Link}
-              key={index}
-              href={item.link}
-              onClick={() => {
-                setSelected(item.name);
-              }}
-              className={`font-monda hover:!text-game-blue-100 duration-300 text-2xl py-2 ml-5 ${
-                selected === item.name ? "!text-game-blue-100" : "text-white"
-              }`}
-            >
-              {item.name}
-            </Nav.Link>
-          ))}
+          {items
+            .filter((item) => item.link !== "/")
+            .map((item, index) => (
+              <Nav.Link
+                as={Link}
+                key={index}
+                href={item.link}
+                onClick={() => {
+                  setSelected(item.name);
+                }}
+                className={`font-monda hover:!text-game-blue-100 duration-300 text-2xl py-2 ml-5 ${
+                  selected === item.name ? "!text-game-blue-100" : "text-white"
+                }`}
+              >
+                {item.name}
+              </Nav.Link>
+            ))}
           <Nav.Link
             as={Link}
             href="https://discord.com/invite/ejzg2Wb"
