@@ -1,4 +1,5 @@
-import catImage from "/public/assets/cat.png";
+import catImage from "../../public/assets/cat.webp";
+
 export const BOARD = [
   {
     name: "Everlee Mai",
