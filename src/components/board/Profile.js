@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Profile = ({ name, email, title, image, year, major }) => {
   return (
-    <div className="border-2 border-black w-72 rounded-xl">
+    <div className="border-2 border-black w-72 rounded-3xl">
       <Image
         src={image}
         alt="picture of board member"
@@ -12,7 +12,7 @@ const Profile = ({ name, email, title, image, year, major }) => {
       />
 
       <div className="ml-3 mt-4">
-        <div className="font-russo font-bold text-xl mt-3">{name}</div>
+        <div className="font-russo font-bold text-xl">{name}</div>
 
         <div>
           <Link
@@ -27,7 +27,7 @@ const Profile = ({ name, email, title, image, year, major }) => {
 
         <div className="font-monda text-xl mb-1">{title}</div>
 
-        <div className="font-monda mb-4">
+        <div className="font-monda mb-3">
           {year} - {major}
         </div>
       </div>
