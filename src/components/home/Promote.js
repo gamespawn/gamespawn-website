@@ -6,7 +6,7 @@ import turtle from "@/public/assets/home/turtle.webp";
 
 const Promote = () => {
   return (
-    <div className="grid grid-cols-2 my-8">
+    <div className="grid grid-cols-2 mb-20">
       <div className="flex items-center justify-center bg-game-blue-300 space-x-8 rounded-r-3xl">
         <Image alt="Blizzard" src={blizzard}></Image>
         <Image alt="Obsidian Entertainment" src={obsidian}></Image>

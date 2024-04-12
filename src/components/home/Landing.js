@@ -6,7 +6,7 @@ import Button from "/src/components/Button.js";
 
 const Landing = () => {
   return (
-    <div className="flex justify-center items-center w-full">
+    <div className="flex justify-center items-center w-full h-[80vh] ">
       <div className="w-2/12">
         <Image alt="left" src={landingleft} />
       </div>
