@@ -1,8 +1,12 @@
 import React from "react";
-import Banner from "/src/components/PageBanner.js";
+import Team from "@/components/board/Team";
 
 const page = () => {
-  return <Banner title="MEET THE BOARD" />;
+  return (
+    <div>
+      <Team />
+    </div>
+  );
 };
 
 export default page;
