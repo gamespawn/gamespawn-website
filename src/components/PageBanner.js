@@ -1,4 +1,4 @@
-import bannerPic from "/public/assets/banner.png";
+import bannerPic from "/public/assets/banner.webp";
 import Image from "next/image";
 
 const Banner = ({ title }) => {
