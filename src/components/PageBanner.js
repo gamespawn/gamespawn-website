@@ -3,15 +3,15 @@ import Image from "next/image";
 
 const Banner = ({ title }) => {
   return (
-    <div>
-      <div className="bg-game-blue-100 overflow-hidden w-full h-60">
-        <Image
-          src={bannerPic}
-          className="object-cover h-full w-full"
-          alt="background banner pic"
-        />
+    <div className="bg-game-blue-100 relative-w-screen">
+      <Image
+        src={bannerPic}
+        className="object-cover md:h-48 w-full "
+        alt="background banner pic"
+      />
+      <div className="hidden md:block font-russo absolute top-32 inset-x-0 text-white text-5xl text-center">
+        {title}
       </div>
-      <div className="z-2">{title}</div>
     </div>
   );
 };
