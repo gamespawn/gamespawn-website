@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${russo.variable} ${monda.variable} ${start.variable}`}>
         <Navigation />
-        <div className="pt-[6vh]"> {children}</div>
+        <div className="pt-[8vh]"> {children}</div>
         <Footer />
       </body>
     </html>
