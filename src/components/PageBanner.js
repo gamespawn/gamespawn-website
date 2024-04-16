@@ -9,7 +9,7 @@ const Banner = ({ title }) => {
         className="object-cover md:h-48 w-full "
         alt="background banner pic"
       />
-      <div className="hidden md:block font-russo absolute top-32 inset-x-0 text-white text-5xl text-center">
+      <div className="hidden sm:text-3xl md:block font-russo absolute top-32 inset-x-0 text-white lg:text-5xl text-center">
         {title}
       </div>
     </div>
