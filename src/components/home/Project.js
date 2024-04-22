@@ -1,8 +1,7 @@
-"use client"
+"use client";
 import React from "react";
 import Button from "/src/components/Button.js";
 import Link from "next/link";
-
 
 const Project = () => {
   return (
@@ -14,18 +13,21 @@ const Project = () => {
         </div>
         <div className="font-monda text-xl text-right leading-8">Sketch</div>
       </div>
-      
-      <Link as = "project" href = "/" onClick={() => {
-            setSelected("");
-          }
-          
-          }>
-        <Button text="see all projects" background="bg-game-blue-300 p-10 mb-20" />
+
+      <Link
+        as="/projects"
+        href="/"
+        onClick={() => {
+          setSelected("");
+        }}
+      >
+        <Button
+          text="see all projects"
+          background="bg-game-blue-300 p-10 mb-20"
+        />
       </Link>
-      
     </div>
   );
 };
 
 export default Project;
- 
