@@ -6,10 +6,10 @@ const Banner = ({ title }) => {
     <div className="bg-game-blue-100 relative-w-screen">
       <Image
         src={bannerPic}
-        className="object-cover md:h-48 w-full "
+        className=" opacity-0 md:object-cover h-48 w-full md:opacity-100 "
         alt="background banner pic"
       />
-      <div className="hidden text-3xl md:block font-russo absolute top-32 inset-x-0 text-white lg:text-5xl text-center">
+      <div className="text-5xl md:block font-russo absolute top-32 inset-x-0 text-white  text-center">
         {title}
       </div>
     </div>
@@ -17,3 +17,5 @@ const Banner = ({ title }) => {
 };
 
 export default Banner;
+
+import React from "react";
