@@ -2,7 +2,7 @@ import Button from "@/components/Button";
 
 const NotFound = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mt-44 mb-64">
       <h1 className="text-strong text-game-blue-100 text-9xl font-russo leading-3 my-12">
         404
       </h1>
