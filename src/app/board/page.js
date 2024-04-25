@@ -3,7 +3,7 @@ import Team from "@/components/board/Team";
 
 const page = () => {
   return (
-    <div>
+    <div className="flex justify-center">
       <Team />
     </div>
   );
