@@ -6,10 +6,10 @@ const Banner = ({ title }) => {
     <div className="bg-game-blue-100 relative-w-screen">
       <Image
         src={bannerPic}
-        className=" opacity-0 md:object-cover h-48 w-full md:opacity-100 "
+        className=" opacity-0 md:object-cover w-full md:opacity-100 -mt-20"
         alt="background banner pic"
       />
-      <div className="text-5xl md:block font-russo absolute top-32 inset-x-0 text-white  text-center">
+      <div className="text-5xl md:block font-russo absolute top-40 inset-x-0 text-white  text-center">
         {title}
       </div>
     </div>
