@@ -1,4 +1,3 @@
-
 import cross from "/public/assets/projects/ongoing/cross.webp";
 import other from "/public/assets/projects/ongoing/Other.webp";
 import ragdoll from "/public/assets/projects/ongoing/ragdoll.webp";
