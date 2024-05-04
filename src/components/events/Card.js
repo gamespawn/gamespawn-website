@@ -1,7 +1,7 @@
 const Event = ({ month, day, hour, name, location, description }) => {
   return (
     <div className="flex flex-row justify-center drop-shadow-2xl mx-auto w-8/12">
-      <div className="flex flex-col justify-center bg-game-blue-100 rounded-l-2xl text-[#ffffff] py-4 w-1/5">
+      <div className="flex flex-col justify-center bg-game-blue-400 rounded-l-2xl text-[#ffffff] py-4 w-1/5">
         <div className="font-russo mt-3 text-center md:text-5xl">{month}</div>
         <div className="font-russo text-center md:text-5xl pt-2">{day}</div>
         <div className="font-russo text-center md:text-3xl py-2">{hour}</div>

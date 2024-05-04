@@ -46,8 +46,8 @@ const Navigation = () => {
                 onClick={() => {
                   setSelected(item.name);
                 }}
-                className={`font-monda hover:!text-game-blue-100 duration-300 text-2xl py-2 ml-5 ${
-                  selected === item.name ? "!text-game-blue-100" : "text-white"
+                className={`font-monda hover:!text-game-blue-300 duration-300 text-2xl py-2 ml-5 ${
+                  selected === item.name ? "!text-game-blue-300" : "text-white"
                 }`}
               >
                 {item.name}
@@ -56,7 +56,7 @@ const Navigation = () => {
           <Nav.Link
             as={Link}
             href="https://discord.com/invite/ejzg2Wb"
-            className="font-monda text-white text-2xl py-2 px-3 ml-5 bg-game-blue-200 hover:bg-game-blue-400 rounded-full"
+            className="font-monda text-white text-2xl py-2 px-3 ml-5 bg-game-blue-300 hover:bg-game-blue-300 rounded-full"
           >
             join now
           </Nav.Link>
