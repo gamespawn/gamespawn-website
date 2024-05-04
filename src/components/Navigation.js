@@ -48,7 +48,7 @@ const Navigation = () => {
                     onMouseEnter={() => setShow(true)}
                     onMouseLeave={() => setShow(false)}
                     onClick={() => setSelected(item.name)}
-                    className="!border-0 [&>*]:!bg-transparent"
+                    className="[&>*]:!bg-transparent"
                     title={
                       <Link
                         href={item.link}
@@ -59,6 +59,13 @@ const Navigation = () => {
                         }`}
                       >
                         {item.name}
+                        <style>
+                          {`
+                            .dropdown-toggle:after {
+                                color: #ffffff;
+                            }
+                          `}
+                        </style>
                       </Link>
                     }
                   >
