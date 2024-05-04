@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import Button from "/src/components/Button.js";
+import Link from "next/link";
 import ProjDisplay from "./ProjDisplay";
 import heart from "@/public/assets/projects/heart.webp";
 import sketch from "@/public/assets/projects/sketch.webp";
@@ -16,7 +18,19 @@ const Project = () => {
           <ProjDisplay title="Sketch" image={sketch} />
         </div>
       </div>
-      <Button text="see all projects" background="bg-game-blue-300 p-10" />
+
+      <Link
+        as="/projects"
+        href="/"
+        onClick={() => {
+          setSelected("");
+        }}
+      >
+        <Button
+          text="see all projects"
+          background="bg-game-blue-300 p-10 mb-20"
+        />
+      </Link>
     </div>
   );
 };

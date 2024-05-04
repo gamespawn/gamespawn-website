@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/assets/logo.webp";
@@ -10,6 +11,7 @@ import { items } from "@/data/NavItems";
 
 const Navigation = () => {
   const [selected, setSelected] = useState("");
+  const [show, setShow] = useState(false);
   return (
     <Navbar
       collapseOnSelect
@@ -39,24 +41,66 @@ const Navigation = () => {
           {items
             .filter((item) => item.link !== "/")
             .map((item, index) => (
-              <Nav.Link
-                as={Link}
-                key={index}
-                href={item.link}
-                onClick={() => {
-                  setSelected(item.name);
-                }}
-                className={`font-monda hover:!text-game-blue-300 duration-300 text-2xl py-2 ml-5 ${
-                  selected === item.name ? "!text-game-blue-300" : "text-white"
-                }`}
-              >
-                {item.name}
-              </Nav.Link>
+              <div key={index}>
+                {item.sub ? (
+                  <NavDropdown
+                    show={show}
+                    onMouseEnter={() => setShow(true)}
+                    onMouseLeave={() => setShow(false)}
+                    onClick={() => setSelected(item.name)}
+                    className="[&>*]:!bg-transparent"
+                    title={
+                      <Link
+                        href={item.link}
+                        className={`font-monda hover:!text-game-blue-100 hover:no-underline duration-300 text-2xl py-2 mx-2 ${
+                          selected === item.name
+                            ? "!text-game-blue-100"
+                            : "text-white"
+                        }`}
+                      >
+                        {item.name}
+                        <style>
+                          {`
+                            .dropdown-toggle:after {
+                                color: #ffffff;
+                            }
+                          `}
+                        </style>
+                      </Link>
+                    }
+                  >
+                    {item.sub.map((page, index) => (
+                      <NavDropdown.Item
+                        key={index}
+                        href={page.link}
+                        className="flex justify-center font-monda bg-white !text-game-blue-100 text-xl"
+                      >
+                        {page.name}
+                      </NavDropdown.Item>
+                    ))}
+                  </NavDropdown>
+                ) : (
+                  <Nav.Link
+                    as={Link}
+                    href={item.link}
+                    onClick={() => {
+                      setSelected(item.name);
+                    }}
+                    className={`font-monda hover:!text-game-blue-100 duration-300 text-2xl py-2 mx-2 ${
+                      selected === item.name
+                        ? "!text-game-blue-100"
+                        : "text-white"
+                    }`}
+                  >
+                    {item.name}
+                  </Nav.Link>
+                )}
+              </div>
             ))}
           <Nav.Link
             as={Link}
             href="https://discord.com/invite/ejzg2Wb"
-            className="font-monda text-white text-2xl py-2 px-3 ml-5 bg-game-blue-300 hover:bg-game-blue-300 rounded-full"
+            className="font-monda text-white text-2xl py-2 px-3 ml-2 bg-game-blue-200 hover:bg-game-blue-400 rounded-full"
           >
             join now
           </Nav.Link>
