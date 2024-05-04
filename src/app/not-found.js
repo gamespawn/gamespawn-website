@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 const NotFound = () => {
   return (
     <div className="flex flex-col space-y-4 items-center h-screen justify-center">
-      <h1 className="text-strong text-game-blue-100 text-9xl font-russo">
+      <h1 className="text-strong text-game-blue-400 text-9xl font-russo">
         404
       </h1>
       <p className="text-4xl font-monda font-bold">OOPS, PAGE NOT FOUND!</p>
