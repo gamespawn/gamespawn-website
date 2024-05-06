@@ -3,6 +3,7 @@ import Image from "next/image";
 import landingleft from "@/public/assets/home/landingLeft.webp";
 import landingright from "@/public/assets/home/landingRight.webp";
 import Button from "/src/components/Button.js";
+import Link from "next/link";
 
 const Landing = () => {
   return (
@@ -17,7 +18,9 @@ const Landing = () => {
           {" "}
           UCR&#39;s game development club
         </div>
-        <Button text="join us" background="bg-game-blue-100" />
+        <Link href="https://discord.com/invite/ejzg2Wb">
+          <Button text="join us" background="bg-game-blue-100" />
+        </Link>
       </div>
       <div className="w-2/12">
         <Image className="" alt="right" src={landingright} />
