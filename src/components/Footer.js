@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="text-white bg-gradient-to-r from-game-blue-400 via-game-blue-300 to-game-blue-100 grid grid-cols-2 ">
+    <div className="text-white bg-gradient-to-r from-[#08789A] via-[#239CBC] to-[#2FC7EC] grid grid-cols-2 ">
       <div className="flex ">
         <Link
           href="/"
