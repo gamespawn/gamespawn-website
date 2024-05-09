@@ -1,4 +1,6 @@
 import React from "react";
+import Search from "./Search";
+import Cards from "./Cards";
 
 export default function Intro() {
   return (
@@ -16,6 +18,8 @@ export default function Intro() {
         a masterpiece.
       </p>
       Without further ado, behold!
+      <Search />
+      <Cards />
     </div>
   );
 }
