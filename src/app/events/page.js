@@ -1,7 +1,12 @@
 import React from "react";
+import CalendarEvents from "@/components/events/CalendarEvents";
 
 const page = () => {
-  return <div>Events Page</div>;
+  return (
+    <div>
+      <CalendarEvents show={false} />
+    </div>
+  );
 };
 
 export default page;
