@@ -52,11 +52,19 @@ const CalendarEvents = ({ limited = false, show }) => {
                 onNavigate={(newDate) => {
                   setDate(newDate);
                 }}
-                // components={{
-                //     event: ,
-                //     toolbar: ,
-                //     header: ,
-                // }}
+                eventPropGetter={(event) => {
+                  return { className: `!bg-game-black` };
+                }}
+                dayPropGetter={(event) => {
+                  const bg =
+                    new Date(event).toLocaleDateString() ==
+                    new Date().toLocaleDateString()
+                      ? "!bg-blue-100"
+                      : "!bg-white";
+                  return {
+                    className: `${bg} m-0 p-0 border-1 border-black`,
+                  };
+                }}
               />
             </div>
           </div>
