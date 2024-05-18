@@ -6,11 +6,11 @@ import Button from "/src/components/Button.js";
 
 const Landing = () => {
   return (
-    <div className="flex justify-center items-center w-full h-[80vh] ">
-      <div className="hidden sm:block sm:w-2/12">
+    <div className="flex justify-center items-center w-full h-[60vh] lg:h-[80vh] ">
+      <div className="hidden lg:block lg:w-2/12">
         <Image alt="left" src={landingleft} />
       </div>
-      <div className="text-center sm:w-6/12">
+      <div className="text-center lg:w-6/12">
         <div className="font-monda text-3xl sm:text-4xl font-bold mb-2 sm:mb-3">
           Welcome to
         </div>
@@ -21,7 +21,7 @@ const Landing = () => {
         </div>
         <Button text="join us" background="bg-game-blue-200" />
       </div>
-      <div className="hidden sm:block sm:w-2/12">
+      <div className="hidden lg:block lg:w-2/12">
         <Image className="" alt="right" src={landingright} />
       </div>
     </div>
