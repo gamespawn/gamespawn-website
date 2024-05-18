@@ -7,7 +7,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 const ClubCards = () => {
   return (
     <div className="flex w-full justify-center mb-20">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-4 md:w-10/12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-4 w-10/12 lg:w-10/12">
         <ClubCard
           title="WORKSHOPS"
           description="Our student-led 
