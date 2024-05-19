@@ -9,10 +9,10 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="text-white bg-gradient-to-r from-game-blue-400 via-game-blue-300 to-game-blue-100 grid grid-cols-2 ">
-      <div className="flex scale-50 md:scale-100">
+      <div className="flex scale-75 md:scale-100">
         <Link
           href="/"
-          className="transition ease-in-out hover:opacity-80 flex items-end ml-2"
+          className="transition ease-in-out hover:opacity-80 flex items-end lg:ml-2"
         >
           <Image className="" src={footerLogo} alt="logo" />
         </Link>
@@ -22,8 +22,8 @@ const Footer = () => {
       </div>
 
       <div className=" text-blue grid grid-cols-3 ">
-        <div className="grid col-span-2  justify-end items-end w-full">
-          <div className="font-bold flex-col  justify-between h-4/6 font-monda hidden md:flex text-3xl border-white text-right  pl-20 mb-10">
+        <div className="grid col-span-2 justify-end items-end w-full">
+          <div className="font-bold flex-col  justify-between h-4/6 font-monda flex text-sm lg:text-3xl border-white text-right  pl-20 mb-10">
             <div>contact us! </div>
             <br />
             <div>900 University Ave Riverside, CA 92521</div>
@@ -32,8 +32,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:text-5xl justify-end h-full items-center ">
-          <div className="flex flex-col h-4/6 justify-between  mb-10">
+        <div className="flex flex-col text-xl lg:text-5xl justify-end h-full items-center ">
+          <div className="flex flex-col h-4/6 justify-between  mb-10 ">
             <Link
               target="_blank"
               href="https://discord.com/invite/ejzg2Wb"
