@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import footerLogo from "../../public/assets/footerLogo.webp";
+import { FaDiscord } from "react-icons/fa6";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { AiFillFacebook } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
 import Link from "next/link";
 
@@ -34,15 +34,27 @@ const Footer = () => {
 
         <div className="flex flex-col sm:text-5xl justify-end h-full items-center ">
           <div className="flex flex-col h-4/6 justify-between  mb-10">
-            <Link target="_blank" href="">
+            <Link
+              target="_blank"
+              href="https://discord.com/invite/ejzg2Wb"
+              alt="UCR Gamepawn Discord"
+            >
+              <FaDiscord className="transition ease-in-out scale-110 hover:opacity-80 hover:text" />
+            </Link>
+
+            <Link
+              target="_blank"
+              href="https://www.instagram.com/gamespawn.ucr/"
+              alt="UCR Gamespawn Instagram"
+            >
               <AiOutlineInstagram className="transition ease-in-out scale-110 hover:opacity-80 hover:text" />
             </Link>
 
-            <Link target="_blank" href="">
-              <AiFillFacebook className="transition ease-in-out hover:opacity-80 hover:text" />
-            </Link>
-
-            <Link target="_blank" href="">
+            <Link
+              target="_blank"
+              href="https://www.youtube.com/channel/UCDnCEGvQ-JMULHeqJrEuTDw"
+              alt="UCR Gamespawn YouTube"
+            >
               <AiFillYoutube className="transition ease-in-out hover:text hover:scale-95" />
             </Link>
           </div>
