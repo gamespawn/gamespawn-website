@@ -1,10 +1,13 @@
 import React from "react";
 import Intro from "@/components/projects/Intro";
-
+import Search from "@/components/projects/Search";
+import Cards from "@/components/projects/Cards";
 const page = () => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex flex-col items-center justify-center">
       <Intro />
+      <Search />
+      <Cards />
     </div>
   );
 };
