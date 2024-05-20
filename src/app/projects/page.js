@@ -7,10 +7,10 @@ const page = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <Intro />
-      <Suspense />
-      <Search />
-      <Cards />
-      <Suspense />
+      <Suspense>
+        <Search />
+        <Cards />
+      </Suspense>
     </div>
   );
 };
