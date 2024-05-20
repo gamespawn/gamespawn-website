@@ -8,13 +8,17 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="text-white bg-gradient-to-r from-game-blue-400 via-game-blue-300 to-game-blue-100 grid grid-cols-2 ">
-      <div className="flex scale-75 md:scale-100">
+    <div className="text-white bg-gradient-to-r from-game-blue-300 via-game-blue-400 to-game-blue-200 grid grid-cols-2 ">
+      <div className="flex ">
         <Link
           href="/"
           className="transition ease-in-out hover:opacity-80 flex items-end lg:ml-2"
         >
-          <Image className="" src={footerLogo} alt="logo" />
+          <Image
+            className="flex scale-75 md:scale-100"
+            src={footerLogo}
+            alt="logo"
+          />
         </Link>
         <div className="text-6xl font-russo hidden xl:flex justify-end items-end w-5/12 mb-10 ">
           GAMESPAWN
