@@ -1,14 +1,14 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
-const Card = ({ id, name, img }) => {
+const Card = ({ id, name, image }) => {
   return (
     <Link
       href={`/projects/details?id=${id}`}
-      className="shadow rounded-lg text-center p-2 no-underline text-black"
+      className="border-2 border-black rounded-3xl shadow text-center !no-underline text-black p-3"
     >
-      <p className="project-name text-2xl font-bold mb-0">{name}</p>
-      {/* <p className="text-gray-400 text-xl mb-0">{year}</p> */}
-      {/* <p className=" text-gray-400 text-lg">{names.join(", ")}</p> */}
+      <Image src={image} alt="picture of project" className="rounded-3xl" />
+      <div className=" mt-2 font-russo font-bold text-xl">{name}</div>
     </Link>
   );
 };

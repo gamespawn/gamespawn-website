@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useSearchParams } from "next/navigation";
-import TempProjects from "@/data/TempProjects.json"; // temp projects data file (not committed)
+import TempProjects from "@/data/TempProjects.js"; // temp projects data file (not committed)
 import Card from "./Card";
 
 const Cards = () => {
@@ -15,9 +15,9 @@ const Cards = () => {
   ).slice(12 * page, 12 * page + 12);
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 w-10/12">
+    <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 w-10/12 justify-center my-6">
       {cards.map(({ title, thumbnail, id }) => (
-        <Card key={id} id={id} name={title} img={thumbnail} />
+        <Card key={id} id={id} name={title} image={thumbnail} />
       ))}
     </div>
   );
