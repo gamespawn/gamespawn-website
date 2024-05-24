@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import moment from "moment";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-// import CustomToolbar from "./CustomToolbar.js";
+import CustomToolbar from "./CustomToolbar.js";
 // import CustomEvent from "./CustomEvent.js";
-// import CustomHeader from "./CustomHeader.js";
+import CustomHeader from "./CustomHeader.js";
 import axios from "axios";
 // import Modal from "./Modal.js";
 // import Upcoming from "./Upcoming.js";
@@ -40,8 +40,8 @@ const CalendarEvents = ({ limited = false, show }) => {
     events && (
       <section className="w-full flex justify-center items-center flex-col">
         {!limited && (
-          <div className="w-9/12 flex justify-center items-center">
-            <div className="h-[100vh] w-full relative">
+          <div className="m-3 w-11/12 flex justify-center items-center">
+            <div className="h-[110vh] w-full relative">
               <Calendar
                 className="w-full font-russo text-xl"
                 date={date}
@@ -49,6 +49,10 @@ const CalendarEvents = ({ limited = false, show }) => {
                 localizer={mLocalizer}
                 defaultView="month"
                 views={["month"]}
+                components={{
+                  header: CustomHeader,
+                  toolbar: CustomToolbar,
+                }}
                 onNavigate={(newDate) => {
                   setDate(newDate);
                 }}
@@ -62,7 +66,7 @@ const CalendarEvents = ({ limited = false, show }) => {
                       ? "!bg-blue-100"
                       : "!bg-white";
                   return {
-                    className: `${bg} m-0 p-0 border-1 border-black`,
+                    className: `${bg} border-2 border-black`,
                   };
                 }}
               />

@@ -1,0 +1,8 @@
+.rbc-header {
+  padding: 0px;
+}
+
+.rbc-header + .rbc-header {
+  border-left: 3px solid;
+  border-color: rgb(0, 0, 0);
+}
