@@ -4,11 +4,10 @@ import moment from "moment";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import CustomToolbar from "./CustomToolbar.js";
-// import CustomEvent from "./CustomEvent.js";
+import CustomEvent from "./CustomEvent.js";
 import CustomHeader from "./CustomHeader.js";
 import axios from "axios";
 // import Modal from "./Modal.js";
-// import Upcoming from "./Upcoming.js";
 const mLocalizer = momentLocalizer(moment);
 
 const CalendarEvents = ({ limited = false, show }) => {
@@ -40,24 +39,25 @@ const CalendarEvents = ({ limited = false, show }) => {
     events && (
       <section className="w-full flex justify-center items-center flex-col">
         {!limited && (
-          <div className="m-3 w-11/12 flex justify-center items-center">
-            <div className="h-[110vh] w-full relative">
+          <div className="mb-5 w-9/12 flex justify-center items-center">
+            <div className="h-[100vh] w-full relative">
               <Calendar
-                className="w-full font-russo text-xl"
+                className="w-full font-russo text-2xl"
                 date={date}
                 events={events}
                 localizer={mLocalizer}
                 defaultView="month"
                 views={["month"]}
                 components={{
-                  header: CustomHeader,
+                  event: CustomEvent,
                   toolbar: CustomToolbar,
+                  header: CustomHeader,
                 }}
                 onNavigate={(newDate) => {
                   setDate(newDate);
                 }}
                 eventPropGetter={(event) => {
-                  return { className: `!bg-game-black` };
+                  return { className: `!bg-black` };
                 }}
                 dayPropGetter={(event) => {
                   const bg =
@@ -66,7 +66,7 @@ const CalendarEvents = ({ limited = false, show }) => {
                       ? "!bg-blue-100"
                       : "!bg-white";
                   return {
-                    className: `${bg} border-2 border-black`,
+                    className: `${bg} m-0 p-0 border-x-4 border-b-4 border-black`,
                   };
                 }}
               />

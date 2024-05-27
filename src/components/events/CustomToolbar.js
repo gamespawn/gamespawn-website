@@ -21,9 +21,9 @@ const CustomToolbar = (event) => {
           console.log("prev");
           event.onNavigate("PREV");
         }}
-        className="text-game-black hover:cursor-pointer "
+        className="text-black hover:cursor-pointer "
       />
-      <div className="text-center text-4xl p-4 text-game-black">
+      <div className="text-center text-4xl p-4 text-black">
         {monthNames[event.date.getMonth()]}
         &nbsp;
         {event.date.getFullYear()}
