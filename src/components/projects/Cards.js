@@ -4,16 +4,17 @@ import { useSearchParams } from "next/navigation";
 import TempProjects from "@/data/TempProjects.js";
 import Card from "./Card";
 
-const Cards = ({ activeFilters }) => {
+const Cards = ({ yearFilters, tagFilters }) => {
   const searchParams = useSearchParams();
   const page = parseInt(searchParams.get("page") ?? 0);
   const search = searchParams.get("search") ?? "";
   const searchString = search.toLowerCase();
 
   const filteredCards = TempProjects.filter(
-    ({ title, schoolyear }) =>
+    ({ title, schoolyear, tags }) =>
       title.toLowerCase().includes(searchString) &&
-      (activeFilters.length === 0 || activeFilters.includes(schoolyear))
+      (yearFilters.length === 0 || yearFilters.includes(schoolyear)) &&
+      (tagFilters.length === 0 || tagFilters.some((tag) => tags.includes(tag)))
   ).slice(12 * page, 12 * page + 12);
 
   return (
