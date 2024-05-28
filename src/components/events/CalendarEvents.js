@@ -18,7 +18,6 @@ const CalendarEvents = ({ limited = false, show }) => {
   useEffect(() => {
     const startDate = moment().subtract(10, "weeks").toISOString();
     const endDate = moment().add(10, "weeks").toISOString();
-
     axios
       .get(
         `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=starttime&timeMin=${startDate}&timeMax=${endDate}&maxResults=${size}`
@@ -29,9 +28,8 @@ const CalendarEvents = ({ limited = false, show }) => {
           a.end = new Date(a.end.dateTime);
           return a;
         });
-
         setEvents(calendarEvents);
-        console.log(events);
+        console.log(calendarEvents);
       });
   }, [size]);
 
