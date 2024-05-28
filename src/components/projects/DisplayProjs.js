@@ -14,20 +14,23 @@ const DisplayProjs = ({ projData }) => {
   const [tagFilters, setTags] = useState([]);
 
   return (
-    <div className="flex flex-col">
-      <Search />
-      <Filters
-        text="Year"
-        options={schoolyears}
-        filters={yearFilters}
-        setFilters={setYears}
-      />
-      <Filters
-        text="Tags"
-        options={Tags}
-        filters={tagFilters}
-        setFilters={setTags}
-      />
+    <div className="flex flex-col w-full">
+      <div className="flex ">
+        <Filters
+          text="Year"
+          options={schoolyears}
+          filters={yearFilters}
+          setFilters={setYears}
+        />
+        <Filters
+          text="Tags"
+          options={Tags}
+          filters={tagFilters}
+          setFilters={setTags}
+        />
+        <Search />
+      </div>
+
       <Cards
         yearFilters={yearFilters}
         tagFilters={tagFilters}

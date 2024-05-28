@@ -11,11 +11,11 @@ const Filters = ({ text, options, filters, setFilters }) => {
   };
 
   return (
-    <div className="bg-yellow-100">
-      <div className="bg-green-100  border-2 border-black w-3/12">
+    <div className="bg-yellow-10 w-full">
+      <div className="bg-green-100  border-2 border-black ">
         Filter By {text}
       </div>
-      <div className="w-fit grid grid-cols-1 gap-2 bg-green-100">
+      <div className="grid grid-cols-1 gap-2 bg-green-100">
         {options.map((itemName) => (
           <Checkbox
             key={itemName}

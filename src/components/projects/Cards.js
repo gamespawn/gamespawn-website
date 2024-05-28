@@ -9,15 +9,12 @@ const Cards = ({ yearFilters, tagFilters, projData }) => {
   const search = searchParams.get("search") ?? "";
   const searchString = search.toLowerCase();
 
-  const filteredCards = projData
-    .filter(
-      ({ title, schoolyear, tags }) =>
-        title.toLowerCase().includes(searchString) &&
-        (yearFilters.length === 0 || yearFilters.includes(schoolyear)) &&
-        (tagFilters.length === 0 ||
-          tagFilters.some((tag) => tags.includes(tag)))
-    )
-    .slice(12 * page, 12 * page + 12);
+  const filteredCards = projData.filter(
+    ({ title, schoolyear, tags }) =>
+      title.toLowerCase().includes(searchString) &&
+      (yearFilters.length === 0 || yearFilters.includes(schoolyear)) &&
+      (tagFilters.length === 0 || tagFilters.some((tag) => tags.includes(tag)))
+  );
 
   return (
     <div className="flex justify-center items-center">
