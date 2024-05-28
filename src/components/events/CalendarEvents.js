@@ -7,6 +7,7 @@ import CustomToolbar from "./CustomToolbar.js";
 import CustomEvent from "./CustomEvent.js";
 import CustomHeader from "./CustomHeader.js";
 import Modal from "./Modal.js";
+import Upcoming from "./Upcoming.js";
 const mLocalizer = momentLocalizer(moment);
 
 const CalendarEvents = () => {
@@ -54,7 +55,8 @@ const CalendarEvents = () => {
 
   return (
     <section className="w-full flex justify-center items-center flex-col">
-      <div className="h-[100vh] w-10/12 relative">
+      <Upcoming events={events.filter((e) => e.start >= new Date())} size={3} />
+      <div className="h-[100vh] w-10/12 relative my-10">
         <Calendar
           className="w-full font-russo text-2xl"
           date={date}
