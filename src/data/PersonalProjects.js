@@ -1,8 +1,8 @@
-import Orbital from "@/public/assets/projects/Orbital.png";
-import pursuit from "@/public/assets/projects/pursuit.png";
-import catan from "@/public/assets/projects/catan.png";
-import yuurika from "@/public/assets/projects/yuurika.png";
-import botanist from "@/public/assets/projects/botanist.png";
+import Orbital from "@/public/assets/projects/Orbital.webp";
+import pursuit from "@/public/assets/projects/pursuit.webp";
+import catan from "@/public/assets/projects/catan.webp";
+import yuurika from "@/public/assets/projects/yuurika.webp";
+import botanist from "@/public/assets/projects/botanist.webp";
 
 export const PersonalProjects = [
   {
