@@ -1,11 +1,17 @@
 import React from "react";
-import Banner from "/src/components/PageBanner.js";
-
+import { Suspense } from "react";
+import Banner from "@/components/PageBanner";
+import DisplayProjs from "@/components/projects/DisplayProjs";
+import TotalProjects from "@/data/TotalProjects";
 const page = () => {
   return (
     <div>
-      <Banner title={"Gamespawn"} />
-      <div>Gamespawn</div>
+      <Banner title="GAMESPAWN PROJECTS" />
+      <div className="flex flex-col justify-center items-center">
+        <Suspense>
+          <DisplayProjs projData={TotalProjects} />
+        </Suspense>
+      </div>
     </div>
   );
 };

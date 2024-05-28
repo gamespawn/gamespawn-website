@@ -8,7 +8,7 @@ const schoolyears = [
   2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024,
 ];
 
-const DisplayProjs = () => {
+const DisplayProjs = ({ projData }) => {
   const [filters, setFilters] = useState([]);
 
   return (
@@ -19,7 +19,7 @@ const DisplayProjs = () => {
         filters={filters}
         setFilters={setFilters}
       />
-      <Cards activeFilters={filters} />
+      <Cards activeFilters={filters} projData={projData} />
     </div>
   );
 };
