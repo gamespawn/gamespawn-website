@@ -17,7 +17,7 @@ const Cards = ({ activeFilters }) => {
   ).slice(12 * page, 12 * page + 12);
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 w-10/12 justify-center my-6">
+    <div className="grid sm:grid-cols-1 lg:grid-cols-4 gap-6 w-10/12 justify-center px-2 my-6">
       {filteredCards.map(({ title, thumbnail, id }) => (
         <Card key={id} id={id} name={title} image={thumbnail} />
       ))}
