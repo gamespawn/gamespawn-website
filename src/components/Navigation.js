@@ -50,7 +50,7 @@ const Navigation = () => {
                     onClick={() => setSelected(item.name)}
                     className="[&>*]:!bg-transparent"
                     title={
-                      <Link
+                      <div
                         href={item.link}
                         className={`font-monda hover:!text-game-blue-100 hover:no-underline duration-300 text-2xl py-2 mx-2 ${
                           selected === item.name
@@ -66,7 +66,7 @@ const Navigation = () => {
                             }
                           `}
                         </style>
-                      </Link>
+                      </div>
                     }
                   >
                     {item.sub.map((page, index) => (

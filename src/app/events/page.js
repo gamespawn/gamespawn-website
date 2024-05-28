@@ -1,11 +1,12 @@
 import React from "react";
-import Banner from "/src/components/PageBanner.js";
+import CalendarEvents from "@/components/events/CalendarEvents";
+import Banner from "@/components/PageBanner";
 
 const page = () => {
   return (
     <div>
-      <Banner title={"Events"} />
-      <div>Events Page</div>
+      <Banner title="EVENTS" />
+      <CalendarEvents />
     </div>
   );
 };
