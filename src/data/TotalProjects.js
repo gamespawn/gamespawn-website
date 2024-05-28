@@ -1,19 +1,66 @@
 import heart from "@/public/assets/projects/heart.webp";
+import arcane from "@/public/assets/projects/arcane.webp";
+import advanced from "@/public/assets/projects/AdvanceIQ.webp";
+import atari from "@/public/assets/projects/atari.webp";
+// import augment from "@/public/assets/projects/augment.webp";
+import binding from "@/public/assets/projects/binding.webp";
+import bonds from "@/public/assets/projects/bonds.webp";
+import bubble from "@/public/assets/projects/bubble.webp";
+import catchPic from "@/public/assets/projects/catch.webp";
+import catfish from "@/public/assets/projects/catfish.webp";
+import clown from "@/public/assets/projects/clownchaos.webp";
+import codename from "@/public/assets/projects/codename.webp";
+import colorBash from "@/public/assets/projects/colorBash.webp";
+import concord from "@/public/assets/projects/concord.webp";
+import creation from "@/public/assets/projects/CreationAndConquest.webp";
+import cutie from "@/public/assets/projects/Cutiehack.webp";
+import dabrenters from "@/public/assets/projects/dabrenters.webp";
+import displaced from "@/public/assets/projects/displaced.webp";
+import echo from "@/public/assets/projects/echo.webp";
+import safe from "@/public/assets/projects/safeSpace.webp";
+import familiar from "@/public/assets/projects/familiar.webp";
+// import fate from "@/public/assets/projects/fate.webp";
+// import fishing from "@/public/assets/projects/fishing.webp";
+// import flappy from "@/public/assets/projects/flappy.webp";
+import germ from "@/public/assets/projects/germ.webp";
+import gladiatoon from "@/public/assets/projects/gladiatoon.gif";
+import grandma from "@/public/assets/projects/grandma.webp";
+// import grow from "@/public/assets/projects/grow.webp";
+import guitar from "@/public/assets/projects/guitar.webp";
+import kaiju from "@/public/assets/projects/kaiju.webp";
+// import Leaven from "@/public/assets/projects/Leaven.webp";
+import line from "@/public/assets/projects/line.webp";
+import livelaughdie from "@/public/assets/projects/livelaughdie.webp";
+import Marievie from "@/public/assets/projects/Marievie.webp";
+import mechanical from "@/public/assets/projects/mechanical.webp";
+import nonsenseCat from "@/public/assets/projects/nonsenseCat.webp";
+import Notahero from "@/public/assets/projects/Notahero.webp";
+import ocean from "@/public/assets/projects/ocean.webp";
+// import operation from "@/public/assets/projects/operation.webp";
+import oracle from "@/public/assets/projects/oracle.webp";
+import paleontology from "@/public/assets/projects/paleontology.webp";
+import parasol from "@/public/assets/projects/parasol.webp";
+import search from "@/public/assets/projects/searchlights.webp";
+import projectS from "@/public/assets/projects/projectS.webp";
+import schoolHero from "@/public/assets/projects/schoolHero.webp";
+import silver from "@/public/assets/projects/silver.webp";
+import superepic from "@/public/assets/projects/superepic.webp";
+import terminal from "@/public/assets/projects/terminal.webp";
+import west from "@/public/assets/projects/west.webp";
+import witches from "@/public/assets/projects/witches.webp";
+import girls from "@/public/assets/projects/girls.webp";
+import sketch from "@/public/assets/projects/sketch.webp";
+import UA from "@/public/assets/projects/UA.webp";
+import rhythm from "@/public/assets/projects/rhythm.webp";
+import resonance from "@/public/assets/projects/resonance.webp";
+import seed from "@/public/assets/projects/seed.webp";
+import spirit from "@/public/assets/projects/spirit.webp";
+import starcrossed from "@/public/assets/projects/starcrossed.webp";
+import toy from "@/public/assets/projects/toy.webp";
+import vatican from "@/public/assets/projects/vatican.webp";
+import synthetic from "@/public/assets/projects/garden.webp";
 
 export const TotalProjects = [
-  {
-    title: "Arcane Investigation Series: Episode 1",
-    thumbnail: heart,
-    team: ["Chris Fleming (Slvr_ChariotVII)", "Leilia Lin (Am000zing)"],
-    email: "cflem003@ucr.edu",
-    platforms: ["PC"],
-    description:
-      "This is an investigative RPG in which you play as Tara Arceneaux, a freelance Arcana Detective that uses the mysterious power of the Justice Arcana to find the truth of the cyber attack that's at the center of a nearly two-year-old trial. The so-called \\",
-    tags: ["2D", "Mystery", "RPG", "Story"],
-    schoolyear: 2019,
-    downloadlink:
-      "https://slvrchariotvii.itch.io/arcana-investigation-series-episode-1",
-  },
   {
     title: "At the Heart of the Forest",
     thumbnail: heart,
@@ -25,9 +72,111 @@ export const TotalProjects = [
     schoolyear: 2019,
     downloadlink: "https://rainbowjellie.itch.io/at-the-heart-of-the-forest",
   },
+
+  {
+    title: "Echo in the Mirror",
+    thumbnail: echo,
+    team: ["Dan Ngo", "Evie Chen", "Mari Hayashi", "Rotem Werner", "Noah"],
+    email: "dngo024@ucr.edu",
+    platforms: ["PC"],
+    description: "Join Dwai on an adventure to save the people of the forest!",
+    tags: ["2D", "rpg", "completed"],
+    schoolyear: 2017,
+    downloadlink:
+      "https://drive.google.com/file/d/19z-mpKCXfAwERomq7mvofuSjF_IkGFvH/view?usp=sharing",
+  },
+
+  {
+    title: "Gladiatoon",
+    thumbnail: gladiatoon,
+    team: ["Yuval Bar", "Kevin Huang", "Nat Perez"],
+    email: "",
+    platforms: ["PC"],
+    description:
+      "Cartoony game where you play as a gladiator fighting round after round of increasingly more challenging enemies, with stronger and more wacky weapons becoming available the longer you survive. Since this was a short-term project, the focus was on creating a working combat system with combos and the ability to equip different weapons and shields.",
+    tags: ["3D", "RPG", "story"],
+    schoolyear: 2020,
+    downloadlink: "",
+  },
+  {
+    title: "AdvanceIQ",
+    thumbnail: advanced,
+    team: ["Kobe", "Jakin", "Yuxin", "Roy"],
+    email: "kbraga003@ucr.edu",
+    platforms: ["PC"],
+    description:
+      "**Beginner Project** Short 2D Side-scroller, basic movement - The player is dropped in from nothing and explores what the world holds in store for him. - Uses WASD and space to jump",
+    tags: ["2D", "Casual", "Side-Scroller"],
+    schoolyear: 2020,
+    downloadlink: "https://v3.globalgamejam.org/2020/games/advanceiq-2",
+  },
+  {
+    title: "Atari Adventure",
+    thumbnail: atari,
+    team: ["tafini"],
+    email: "ajohn212@ucr.edu",
+    platforms: ["PC"],
+    description: "A clone of Atari's game Adventure made by Warren Robinett",
+    tags: ["2D", "Adventure", "Scratch"],
+    schoolyear: 2022,
+    downloadlink:
+      "https://v3.globalgamejam.org/2022/games/atari-adventure-1980-1",
+  },
+
+  {
+    title: "Catfish",
+    thumbnail: catfish,
+    team: ["Lauren Gager"],
+    email: "lgage001@ucr.edu",
+    platforms: ["PC"],
+    description:
+      "A cat who fishes! When you catch fish, you can choose to either sell them, release them, or cultivate them and create synthetic fish fillets using the cells of the fish!",
+    tags: ["Fishing"],
+    schoolyear: 2022,
+    downloadlink: "https://devpost.com/software/online-catfish",
+  },
+  {
+    title: "Color Bash",
+    thumbnail: colorBash,
+    videoembed: "https://www.youtube.com/watch?v=ueZONbm3C08&ab_channel=WesM",
+    team: ["Garrick Chiu", "Wes Montano", "Brent Nicks", "Matthew Yong"],
+    email: "gchiu006@ucr.edu",
+    platforms: ["PC"],
+    description: "A colorful new infinite runner! Grind, Customize, and Bash!",
+    tags: ["2D", "Endless Runner"],
+    schoolyear: 2021,
+    downloadlink: "https://devpost.com/software/color-bash",
+  },
+
+  {
+    title: "Arcane Investigation Series: Episode 1",
+    thumbnail: arcane,
+    team: ["Chris Fleming (Slvr_ChariotVII)", "Leilia Lin (Am000zing)"],
+    email: "cflem003@ucr.edu",
+    platforms: ["PC"],
+    description:
+      "This is an investigative RPG in which you play as Tara Arceneaux, a freelance Arcana Detective that uses the mysterious power of the Justice Arcana to find the truth of the cyber attack that's at the center of a nearly two-year-old trial. The so-called \\",
+    tags: ["2D", "Mystery", "RPG", "Story"],
+    schoolyear: 2019,
+    downloadlink:
+      "https://slvrchariotvii.itch.io/arcana-investigation-series-episode-1",
+  },
+  {
+    title: "A Safe Space",
+    thumbnail: safe,
+    videoembed: "https://youtu.be/v3w5-roBR_c",
+    team: ["Everlee Mai", "Codebolt", "h_mA"],
+    email: "emai006@ucr.edu",
+    platforms: ["PC"],
+    description:
+      "Tired of dying, pain and suffering? Try out this game where you can't fail! There's nothing more to it, but at least you're safe, right?",
+    tags: ["2D", "Adventure", "Platformer", "Puzzle"],
+    schoolyear: 2022,
+    downloadlink: "https://codebolt.itch.io/a-safe-space",
+  },
   {
     title: "Binding Treasures",
-    thumbnail: heart,
+    thumbnail: binding,
     team: [
       "Jose Omar Garcia",
       "Andre Amante",
@@ -46,7 +195,7 @@ export const TotalProjects = [
   },
   {
     title: "Bonds of Treasure",
-    thumbnail: heart,
+    thumbnail: bonds,
     team: [
       "Jaclyn Huang",
       "Chris Fleming",
@@ -65,7 +214,7 @@ export const TotalProjects = [
   },
   {
     title: "Codename:Null",
-    thumbnail: heart,
+    thumbnail: codename,
     team: [
       "Yvette Chen",
       "Diane Ngo",
@@ -87,7 +236,7 @@ export const TotalProjects = [
   },
   {
     title: "Concord",
-    thumbnail: heart,
+    thumbnail: concord,
     team: ["Gamespawn"],
     email: "calva038@ucr.edu",
     platforms: ["PC"],
@@ -99,7 +248,7 @@ export const TotalProjects = [
   },
   {
     title: "Creation and Conquest",
-    thumbnail: heart,
+    thumbnail: creation,
     team: [
       "Jackie Chan",
       "Danny Diep",
@@ -125,7 +274,7 @@ export const TotalProjects = [
   },
   {
     title: "Cutie Hack",
-    thumbnail: heart,
+    thumbnail: cutie,
     team: [
       "Montana Esguerra",
       "Robyn Haley",
@@ -143,7 +292,7 @@ export const TotalProjects = [
   },
   {
     title: "Da Brenters",
-    thumbnail: heart,
+    thumbnail: dabrenters,
     team: [
       "Garrick Chiu",
       "Matt",
@@ -167,7 +316,7 @@ export const TotalProjects = [
   },
   {
     title: "Displaced",
-    thumbnail: heart,
+    thumbnail: displaced,
     team: ["Rick Lee + Team"],
     email: "rlee037@ucr.edu",
     platforms: ["PC"],
@@ -177,21 +326,10 @@ export const TotalProjects = [
     schoolyear: 2019,
     downloadlink: "",
   },
-  {
-    title: "Echo in the Mirror",
-    thumbnail: heart,
-    team: ["Dan Ngo", "Evie Chen", "Mari Hayashi", "Rotem Werner", "Noah"],
-    email: "dngo024@ucr.edu",
-    platforms: ["PC"],
-    description: "Join Dwai on an adventure to save the people of the forest!",
-    tags: ["2D", "rpg", "completed"],
-    schoolyear: 2017,
-    downloadlink:
-      "https://drive.google.com/file/d/19z-mpKCXfAwERomq7mvofuSjF_IkGFvH/view?usp=sharing",
-  },
+
   {
     title: "Familiar",
-    thumbnail: heart,
+    thumbnail: familiar,
     team: [
       "Ami Hori",
       "Justin Rafael Acosta",
@@ -211,7 +349,7 @@ export const TotalProjects = [
   },
   {
     title: "Germ Buster",
-    thumbnail: heart,
+    thumbnail: germ,
     team: ["Dexter Gonazles + Team"],
     email: "dgona101@ucr.edu",
     platforms: ["PC"],
@@ -222,20 +360,8 @@ export const TotalProjects = [
     downloadlink: "",
   },
   {
-    title: "Gladiatoon",
-    thumbnail: heart,
-    team: ["Yuval Bar", "Kevin Huang", "Nat Perez"],
-    email: "",
-    platforms: ["PC"],
-    description:
-      "Cartoony game where you play as a gladiator fighting round after round of increasingly more challenging enemies, with stronger and more wacky weapons becoming available the longer you survive. Since this was a short-term project, the focus was on creating a working combat system with combos and the ability to equip different weapons and shields.",
-    tags: ["3D", "RPG", "story"],
-    schoolyear: 2020,
-    downloadlink: "",
-  },
-  {
     title: "Grandma Please",
-    thumbnail: heart,
+    thumbnail: grandma,
     team: [
       "Zoe Omoragbon",
       "Donovan Frazier",
@@ -258,7 +384,7 @@ export const TotalProjects = [
   },
   {
     title: "Kaiju Insurance",
-    thumbnail: heart,
+    thumbnail: kaiju,
     team: [
       "Adam Wise",
       "Annika Kirman",
@@ -283,7 +409,7 @@ export const TotalProjects = [
   },
   {
     title: "Line 'Em Up",
-    thumbnail: heart,
+    thumbnail: line,
     team: ["Bowen"],
     email: "blai006@ucr.edu",
     platforms: ["PC"],
@@ -295,7 +421,7 @@ export const TotalProjects = [
   },
   {
     title: "Marievie",
-    thumbnail: heart,
+    thumbnail: Marievie,
     team: ["Mari Hayashi", "Yvette Chen", "Kevin Huang"],
     email: "gamespawn.ucr@gmail.com",
     platforms: ["Android"],
@@ -308,7 +434,7 @@ export const TotalProjects = [
   },
   {
     title: "Mechanical Magic",
-    thumbnail: heart,
+    thumbnail: mechanical,
     team: [
       "JH",
       "Ray",
@@ -333,7 +459,7 @@ export const TotalProjects = [
   },
   {
     title: "My Nonsense Cat",
-    thumbnail: heart,
+    thumbnail: nonsenseCat,
     team: [
       "Leilia Lin",
       "Izzy Arcinue",
@@ -353,7 +479,7 @@ export const TotalProjects = [
   },
   {
     title: "Not A Hero",
-    thumbnail: heart,
+    thumbnail: Notahero,
     team: [
       "Ruth Sun",
       "Michael Collins",
@@ -375,7 +501,7 @@ export const TotalProjects = [
   },
   {
     title: "Ocean's Demise",
-    thumbnail: heart,
+    thumbnail: ocean,
     team: ["Gamespawn"],
     email: "ychen431@ucr.edu",
     platforms: ["PC"],
@@ -387,7 +513,7 @@ export const TotalProjects = [
   },
   {
     title: "Oracle: The Present",
-    thumbnail: heart,
+    thumbnail: oracle,
     team: ["Gamespawn"],
     email: "gamespawn.ucr@gmail.com",
     platforms: ["PC"],
@@ -400,7 +526,7 @@ export const TotalProjects = [
   },
   {
     title: "Paleontology Simulator",
-    thumbnail: heart,
+    thumbnail: paleontology,
     team: ["Gamespawn"],
     email: "gamespawn.ucr@gmail.com",
     platforms: ["PC"],
@@ -411,7 +537,7 @@ export const TotalProjects = [
   },
   {
     title: "Parasol",
-    thumbnail: heart,
+    thumbnail: parasol,
     team: ["Gamespawn"],
     email: "gamespawn.ucr@gmail.com",
     platforms: ["PC"],
@@ -423,7 +549,7 @@ export const TotalProjects = [
   },
   {
     title: "Project S",
-    thumbnail: heart,
+    thumbnail: projectS,
     team: [
       "Michael He",
       "Connie",
@@ -444,7 +570,7 @@ export const TotalProjects = [
   },
   {
     title: "Resonance",
-    thumbnail: heart,
+    thumbnail: resonance,
     team: [
       "Lorenzo Alamillo",
       "Jeffrey Hsieh",
@@ -464,7 +590,7 @@ export const TotalProjects = [
   },
   {
     title: "Rhythm Hell",
-    thumbnail: heart,
+    thumbnail: rhythm,
     team: [
       "Natalia Chang",
       "Robyn Haley",
@@ -482,7 +608,7 @@ export const TotalProjects = [
   },
   {
     title: "School Hero Festival",
-    thumbnail: heart,
+    thumbnail: schoolHero,
     team: ["Mari Hayashi"],
     email: "mhaya010@ucr.edu",
     platforms: ["PC"],
@@ -494,7 +620,7 @@ export const TotalProjects = [
   },
   {
     title: "Searchlights",
-    thumbnail: heart,
+    thumbnail: search,
     team: ["Liam Carrasco", "Robert", "Klaritza"],
     email: "lcarr042@ucr.edu",
     platforms: ["PC"],
@@ -506,7 +632,7 @@ export const TotalProjects = [
   },
   {
     title: "Silver Sun",
-    thumbnail: heart,
+    thumbnail: silver,
     team: ["Angel", "Aramis", "Donovan", "Edwin", "Jesse", "Peter", "Daphne"],
     email: "amayo004@ucr.edu",
     platforms: ["PC"],
@@ -525,7 +651,7 @@ export const TotalProjects = [
   },
   {
     title: "Sketch",
-    thumbnail: heart,
+    thumbnail: sketch,
     team: [
       "Westin Montano",
       "Matthew Yong",
@@ -555,7 +681,7 @@ export const TotalProjects = [
   },
   {
     title: "Spirit Runner",
-    thumbnail: heart,
+    thumbnail: spirit,
     team: ["Gamespawn"],
     email: "dzhan008@ucr.edu",
     platforms: ["PC"],
@@ -568,7 +694,7 @@ export const TotalProjects = [
   },
   {
     title: "Star-Crossed",
-    thumbnail: heart,
+    thumbnail: starcrossed,
     team: ["Evie Chen", "Dan Ngo"],
     email: "ychen431@ucr.edu",
     platforms: ["PC"],
@@ -592,7 +718,7 @@ export const TotalProjects = [
   },
   {
     title: "The Super Epic Very Grand Totally Final Boss",
-    thumbnail: heart,
+    thumbnail: superepic,
     team: [
       "Elijah Kalal",
       "Andy Jarean",
@@ -610,7 +736,7 @@ export const TotalProjects = [
   },
   {
     title: "Synthetic Garden",
-    thumbnail: heart,
+    thumbnail: synthetic,
     team: ["Evie Chen", "Dan Ngo"],
     email: "ychen431@ucr.edu",
     platforms: ["PC", "Windows", "Mac"],
@@ -621,7 +747,7 @@ export const TotalProjects = [
   },
   {
     title: "Terminal Twilight",
-    thumbnail: heart,
+    thumbnail: terminal,
     team: [
       "Jeffrey Cheng",
       "Kevin Huang",
@@ -641,7 +767,7 @@ export const TotalProjects = [
   },
   {
     title: "The Witches of Luminoire",
-    thumbnail: heart,
+    thumbnail: witches,
     team: [
       "Leilia Lin",
       "Haocheng M.",
@@ -668,7 +794,7 @@ export const TotalProjects = [
   },
   {
     title: "Toy Factory",
-    thumbnail: heart,
+    thumbnail: toy,
     team: ["Gamespawn"],
     email: "gamespawn.ucr@gmail.com",
     platforms: ["PC"],
@@ -687,7 +813,7 @@ export const TotalProjects = [
   },
   {
     title: "U.A. Matching Game",
-    thumbnail: heart,
+    thumbnail: UA,
     team: ["Mari Hayashi"],
     email: "mhaya010@ucr.edu",
     platforms: ["PC"],
@@ -698,7 +824,7 @@ export const TotalProjects = [
   },
   {
     title: "Vatican",
-    thumbnail: heart,
+    thumbnail: vatican,
     team: [
       "Connor",
       "Kas",
@@ -724,7 +850,7 @@ export const TotalProjects = [
   },
   {
     title: "You See Girls",
-    thumbnail: heart,
+    thumbnail: girls,
     team: [
       "Adam Wise",
       "Annika Kirman",
@@ -745,7 +871,7 @@ export const TotalProjects = [
   },
   {
     title: "Bubble Shift",
-    thumbnail: heart,
+    thumbnail: bubble,
     team: ["Marcel Relaford", "Daniel Lopez", "Samantha Liu"],
     email: "mrela001@ucr.edu",
     platforms: ["PC"],
@@ -757,7 +883,7 @@ export const TotalProjects = [
   },
   {
     title: "Catch These Hands",
-    thumbnail: heart,
+    thumbnail: catchPic,
     team: ["Westin Montano"],
     email: "wmont012@ucr.edu",
     platforms: ["In-Browser"],
@@ -768,7 +894,7 @@ export const TotalProjects = [
   },
   {
     title: "Clown Chaos",
-    thumbnail: heart,
+    thumbnail: clown,
     team: ["Andy Siu", "Daniel Lopez", "Nicholas Karalis"],
     email: "mrela001@ucr.edu",
     platforms: ["PC"],
@@ -780,7 +906,7 @@ export const TotalProjects = [
   },
   {
     title: "Guitar Hina",
-    thumbnail: heart,
+    thumbnail: guitar,
     team: ["Andy Jarean", "Tingxuan Wu"],
     email: "twu148@ucr.edu",
     platforms: ["PC"],
@@ -791,7 +917,7 @@ export const TotalProjects = [
   },
   {
     title: "Live Laugh Die",
-    thumbnail: heart,
+    thumbnail: livelaughdie,
     team: ["Andy Jarean", "Komay Sugiyama", "Tingxuan Wu"],
     email: "ajare002@ucr.edu",
     platforms: ["PC"],
@@ -802,7 +928,7 @@ export const TotalProjects = [
   },
   {
     title: "Seed of Light",
-    thumbnail: heart,
+    thumbnail: seed,
     team: [
       "Evelynn Reyes",
       "Kamran Haq",
@@ -830,7 +956,7 @@ export const TotalProjects = [
   },
   {
     title: "Taking Root of the West",
-    thumbnail: heart,
+    thumbnail: west,
     team: ["Devin Alexandre", "Michael Collins", "Jesse Julian"],
     email: "mcoll041@ucr.edu",
     platforms: ["PC"],
