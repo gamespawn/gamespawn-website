@@ -17,8 +17,8 @@ export const items = [
   },
   {
     name: "projects",
-    link: "/projects",
     sub: [
+      { name: "all", link: "/projects" },
       { name: "ongoing", link: "/projects/ongoing" },
       { name: "gamespawn", link: "/projects/gamespawn" },
       { name: "gamejam", link: "/projects/gamejam" },
