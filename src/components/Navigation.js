@@ -47,22 +47,14 @@ const Navigation = () => {
                     show={show}
                     onMouseEnter={() => setShow(true)}
                     onMouseLeave={() => setShow(false)}
-                    onClick={() => setSelected(item.name)}
                     className="[&>*]:!bg-transparent"
                     title={
-                      <div
-                        href={item.link}
-                        className={`font-monda hover:!text-game-blue-100 hover:no-underline duration-300 text-2xl py-2 mx-2 ${
-                          selected === item.name
-                            ? "!text-game-blue-100"
-                            : "text-white"
-                        }`}
-                      >
+                      <div className="font-monda hover:!text-game-blue-100 hover:no-underline duration-300 text-white text-2xl py-2 mx-2">
                         {item.name}
                         <style>
                           {`
                             .dropdown-toggle:after {
-                                color: #ffffff;
+                                display: none;
                             }
                           `}
                         </style>
