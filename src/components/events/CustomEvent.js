@@ -2,7 +2,7 @@ import React from "react";
 
 const CustomEvent = ({ event }) => {
   return (
-    <div className="font-russo font-semibold text-base md:text-lg text-white p-1">
+    <div className=" font-monda semibold text-base text-white p-1">
       <p className="inline whitespace-nowrap">
         {new Date(event.start).toLocaleTimeString(navigator.language, {
           hour: "2-digit",

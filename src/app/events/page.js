@@ -5,7 +5,7 @@ const page = () => {
   return (
     <div>
       <Banner title="EVENTS" />
-      <CalendarEvents show={false} />
+      <CalendarEvents />
     </div>
   );
 };
