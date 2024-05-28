@@ -5,7 +5,7 @@ import Banner from "/src/components/PageBanner.js";
 const page = () => {
   return (
     <div>
-      <Banner title={"OnGoing"} />
+      <Banner title="ONGOING PROJECTS" />
       <div className="px-40 py-24">
         <OnGoing />
       </div>
