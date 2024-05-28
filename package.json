@@ -21,7 +21,8 @@
     "react-big-calendar": "^1.12.1",
     "react-bootstrap": "^2.9.2",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.12.0"
+    "react-icons": "^4.12.0",
+    "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",
