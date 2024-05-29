@@ -10,7 +10,7 @@ const Project = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full">
       <div className="text-6xl font-russo mb-2">CHECK OUT OUR PROJECTS!</div>
-      <div className="grid grid-cols-2 my-8">
+      <div className="grid lg:grid-cols-2 md:grid-cols-1 my-8">
         <div>
           <ProjDisplay title="At the Heart of the Forest" image={heart} />
         </div>
