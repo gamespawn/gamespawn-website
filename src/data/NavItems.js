@@ -5,19 +5,25 @@ export const items = [
   },
   {
     name: "home",
-    link: "home",
+    link: "/home",
   },
   {
     name: "board",
-    link: "board",
+    link: "/board",
   },
   {
     name: "events",
-    link: "events",
+    link: "/events",
   },
   {
     name: "projects",
-    link: "projects",
+    sub: [
+      { name: "all", link: "/projects" },
+      { name: "ongoing", link: "/projects/ongoing" },
+      { name: "gamespawn", link: "/projects/gamespawn" },
+      { name: "gamejam", link: "/projects/gamejam" },
+      { name: "personal", link: "/projects/personal" },
+    ],
   },
   {
     name: "assets",

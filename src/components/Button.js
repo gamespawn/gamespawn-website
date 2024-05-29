@@ -1,7 +1,7 @@
 const Button = ({ text, background }) => {
   return (
     <div
-      className={`drop-shadow-xl inline-block  text-3xl text-center rounded-full font-start py-3 px-8  text-white transition hover:cursor-pointer hover:scale-110 ${background}`}
+      className={`drop-shadow-xl inline-block  whitespace-nowrap text-xl lg:text-2xl text-center rounded-full font-start py-3 px-4  text-white transition hover:cursor-pointer hover:scale-110 ${background}`}
     >
       {text}
     </div>

@@ -4,11 +4,11 @@ import image from "@/public/assets/home/about.webp";
 
 const About = () => {
   return (
-    <div className="grid grid-cols-2 mb-20">
-      <div className="text-6xl font-russo items-left justify-left pl-10">
-        {" "}
-        ABOUT US
-        <div className="text-xl w-11/12 pt-7 leading-8 font-monda items-left justify-left">
+    <div className="grid grid-cols-1 lg:grid-cols-2 mb-20">
+      <div className=" flex flex-col justify-center items-center lg:justify-start lg:items-start lg:pl-4">
+        <div className="text-4xl lg:text-6xl font-russo">ABOUT US</div>
+
+        <div className="text-base md:text-xl w-11/12 lg:w-11/12 pt-7 leading-8 font-monda">
           {" "}
           Founded in 2014, Gamespawn @ University of California Riverside is a
           student organization that focuses on introducing students to game
@@ -19,8 +19,12 @@ const About = () => {
           environment for engineers, programmers, designers, and artists!
         </div>
       </div>
-      <div>
-        <Image src={image} alt="about us"></Image>
+      <div className="flex justify-center items-center my-4 md:my-0">
+        <Image
+          className="w-11/12 lg:w-full "
+          src={image}
+          alt="about us"
+        ></Image>
       </div>
     </div>
   );
