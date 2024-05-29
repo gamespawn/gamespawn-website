@@ -9,7 +9,9 @@ import sketch from "@/public/assets/projects/sketch.webp";
 const Project = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full">
-      <div className="text-6xl font-russo mb-2">CHECK OUT OUR PROJECTS!</div>
+      <div className="text-4xl lg:text-6xl font-russo lg:mb-2 text-center">
+        CHECK OUT OUR PROJECTS!
+      </div>
       <div className="grid lg:grid-cols-2 md:grid-cols-1 my-8">
         <div>
           <ProjDisplay title="At the Heart of the Forest" image={heart} />
