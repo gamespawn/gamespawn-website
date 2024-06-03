@@ -17,7 +17,7 @@ const Cards = ({ yearFilters, tagFilters, projData }) => {
         (tagFilters.length === 0 ||
           tagFilters.some((tag) => tags.includes(tag)))
     )
-    .slice(12 * page, 12 * page + 12);
+    .slice(10 * page, 10 * page + 10);
 
   return (
     <div className="flex justify-center items-center">

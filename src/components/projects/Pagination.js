@@ -18,7 +18,7 @@ const Pagination = ({ projData }) => {
   );
 
   const index = parseInt(searchParams.get("page") ?? 0);
-  const total = Math.floor(projData.length / 12);
+  const total = Math.floor(projData.length / 10);
 
   return (
     <div className="flex gap-3 my-4 justify-center">
