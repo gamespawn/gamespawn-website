@@ -6,7 +6,16 @@ import Cards from "./Cards";
 import Tags from "@/data/Tags";
 
 const schoolyears = [
-  2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024,
+  "2015-2016",
+  "2016-2017",
+  "2017-2018",
+  "2018-2019",
+  "2019-2020",
+  "2020-2021",
+  "2021-2022",
+  "2022-2023",
+  "2023-2024",
+  "2024-2025",
 ];
 
 const DisplayProjs = ({ projData }) => {
@@ -15,20 +24,24 @@ const DisplayProjs = ({ projData }) => {
 
   return (
     <div className="flex flex-col w-full">
-      <div className="flex ">
-        <Filters
-          text="Year"
-          options={schoolyears}
-          filters={yearFilters}
-          setFilters={setYears}
-        />
-        <Filters
-          text="Tags"
-          options={Tags}
-          filters={tagFilters}
-          setFilters={setTags}
-        />
-        <Search />
+      <div className="px-24">
+        <div className="grid grid-cols-4 gap-2">
+          <Filters
+            text="year"
+            options={schoolyears}
+            filters={yearFilters}
+            setFilters={setYears}
+          />
+          <Filters
+            text="tags"
+            options={Tags}
+            filters={tagFilters}
+            setFilters={setTags}
+          />
+          <div className="grid col-span-2">
+            <Search />
+          </div>
+        </div>
       </div>
 
       <Cards
