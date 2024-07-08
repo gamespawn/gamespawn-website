@@ -23,6 +23,7 @@ export const items = [
       { name: "gamespawn", link: "/projects/gamespawn" },
       { name: "gamejam", link: "/projects/gamejam" },
       { name: "personal", link: "/projects/personal" },
+      { name: "tech talks", link: "/projects/techtalks" },
     ],
   },
   {
