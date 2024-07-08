@@ -21,10 +21,10 @@ const Search = () => {
   );
 
   return (
-    <div className="flex items-center border-2 border-gray-100 bg-gray-100 px-3 py-2 w-full rounded my-2">
+    <div className="flex items-center justify-center px-3 rounded ">
       <FaSearch className="mx-2 text-xl" />
       <input
-        className="w-full focus:outline-none bg-gray-100"
+        className="focus:outline-none bg-gray-100 h-[40px] w-full"
         placeholder="Search"
         value={searchParams.get("search") ?? ""}
         onChange={(e) =>
