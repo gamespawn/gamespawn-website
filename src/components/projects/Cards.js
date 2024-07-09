@@ -18,7 +18,7 @@ const Cards = ({ yearFilters, tagFilters, projData }) => {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 w-10/12 justify-center my-6 items-center ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-10/12 justify-center my-6 items-center ">
         {filteredCards.map(({ title, thumbnail, id }) => (
           <Card key={id} id={id} name={title} image={thumbnail} />
         ))}
