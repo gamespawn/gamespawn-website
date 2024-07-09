@@ -14,18 +14,20 @@ const Filters = ({ text, options, filters, setFilters }) => {
   };
 
   return (
-    <div className="bg-yellow-10 w-full">
-      <div className="bg-green-100  border-2 border-black flex">
-        Filter By {text}{" "}
-        <IoIosArrowDown
-          className={`hover:cursor-pointer ${
-            showDropdown ? "rotate-180" : "rotate-0"
-          }`}
-          onClick={() => setShowDropdown(!showDropdown)}
-        />
+    <div className="text-left">
+      <div>
+        <div className="inline-flex w-full items-center justify-center border-2 bg-gray-300 text-xl text-gray-900 py-1 font-semibold">
+          <div className="w-10/12 font-monda pl-2">Filter by {text}</div>
+          <IoIosArrowDown
+            className={` flex gray-300 items-end w-2/12 hover:cursor-pointer ${
+              showDropdown ? "rotate-180" : "rotate-0"
+            }`}
+            onClick={() => setShowDropdown(!showDropdown)}
+          />
+        </div>
       </div>
       {showDropdown && (
-        <div className="grid grid-cols-1 gap-2 bg-green-100">
+        <div className="grid grid-cols-1 gap-3 bg-white text-xl font-monda py-3 px-3">
           {options.map((itemName) => (
             <Checkbox
               key={itemName}
