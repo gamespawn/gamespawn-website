@@ -15,21 +15,28 @@ const DisplayProjs = ({ projData }) => {
   const [tagFilters, setTags] = useState([]);
 
   return (
-    <div className="flex flex-col w-full">
-      <div className="flex ">
-        <Filters
-          text="Year"
-          options={schoolyears}
-          filters={yearFilters}
-          setFilters={setYears}
-        />
-        <Filters
-          text="Tags"
-          options={Tags}
-          filters={tagFilters}
-          setFilters={setTags}
-        />
-        <Search />
+    <div className="flex flex-col w-full h-full">
+      <div className="px-2 py-6 flex w-full space-x-4">
+        <div className="w-3/12">
+          <Filters
+            text="year"
+            options={schoolyears}
+            filters={yearFilters}
+            setFilters={setYears}
+          />
+        </div>
+        <div className="w-3/12">
+          <Filters
+            text="tags"
+            options={Tags}
+            filters={tagFilters}
+            setFilters={setTags}
+          />
+        </div>
+
+        <div className="w-6/12">
+          <Search />
+        </div>
       </div>
 
       <Cards
