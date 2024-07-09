@@ -28,11 +28,11 @@ import Christopher from "../../public/assets/board/christopher-fleming.webp";
 import Jaclyn from "../../public/assets/board/jaclyn-huang.webp";
 import Jose from "../../public/assets/board/jose-omar-garcia.webp";
 import Kevin from "../../public/assets/board/kevin-huang.webp";
-import Jasiel from "../../public/assets/board/jasiel-jimenez.jpg";
-import Christian from "../../public/assets/board/christian-alvarado.jpg";
-import Alexious from "../../public/assets/board/alexious-jimenez.jpg";
+import Jasiel from "../../public/assets/board/jasiel-jiminez.webp";
+import Christian from "../../public/assets/board/christian-alverado.webp";
+import Alexious from "../../public/assets/board/alexious-jiminez.webp";
 import Darren from "../../public/assets/board/darren-houn.webp";
-import Rotem from "../../public/assets/board/rotom-werner.jpg";
+import Rotem from "../../public/assets/board/rotem-werner.webp";
 import Anjin from "../../public/assets/board/anjin-huang.webp";
 import Lorenzo from "../../public/assets/board/lorenzo-alamillo.webp";
 import Chris from "../../public/assets/board/chris-pribyl.webp";
@@ -43,6 +43,8 @@ import DavidZ from "../../public/assets/board/david-zhang.webp";
 import John from "../../public/assets/board/david-zhang.webp";
 import Danny from "../../public/assets/board/danny-diep.webp";
 import Nancy from "../../public/assets/board/nancy-gao.webp";
+import Michaella from "../../public/assets/board/michaella-sheng.webp";
+import Brandon from "../../public/assets/board/brandon-gutzmann.webp";
 
 export const BOARD = {
   2023: [
@@ -617,6 +619,40 @@ export const BOARD = {
       email: "rwern002@ucr.edu",
       title: "Event Coordinator",
       image: Rotem,
+      year: "",
+      major: "Computer Science",
+    },
+  ],
+  "Website Inventors": [
+    {
+      name: "Quynh Nguyen",
+      email: "qnguy019@ucr.edu",
+      title: "Software Engineer",
+      image: Quynh,
+      year: "",
+      major: "Computer Science",
+    },
+    {
+      name: "David Zhang",
+      email: "dzhan008@ucr.edu",
+      title: "Software Engineer",
+      image: DavidZ,
+      year: "",
+      major: "Computer Science",
+    },
+    {
+      name: "Michaella Sheng",
+      email: "msheng@ucr.edu",
+      title: "Software Engineer",
+      image: Michaella,
+      year: "",
+      major: "Computer Science",
+    },
+    {
+      name: "Brandon Gutzmann",
+      email: "bgutz001@ucr.edu",
+      title: "Software Engineer",
+      image: Brandon,
       year: "",
       major: "Computer Science",
     },

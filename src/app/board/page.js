@@ -20,14 +20,16 @@ const Page = () => {
   ];
   const [yearFilters, setYears] = useState(["2023"]);
   return (
-    <div>
+    <div className="w-full ">
       <Banner title={"MEET THE BOARD"} />
-      <Filters
-        text="Year"
-        options={years}
-        filters={yearFilters}
-        setFilters={setYears}
-      />
+      <div className="w-4/12  flex justify-center items-center m-2">
+        <Filters
+          text="Year"
+          options={years}
+          filters={yearFilters}
+          setFilters={setYears}
+        />
+      </div>
       <Team yearFilters={yearFilters} boardData={BOARD} />
     </div>
   );
