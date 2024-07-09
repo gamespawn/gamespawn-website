@@ -7,13 +7,11 @@ const Checkbox = ({ toggle, onClick = () => {}, text = "" }) => {
       onClick={onClick}
     >
       <div
-        className={`w-4 h-4 rounded-sm mr-2 border-2 border-black flex items-center justify-center`}
+        className={` w-4 h-4 font-thin mr-2 border-[1px] border-black flex items-center justify-center`}
       >
-        <BsCheckLg
-          className={`${toggle ? "text-black" : "text-white"} text-xl`}
-        />
+        <BsCheckLg className={`${toggle ? "text-black" : "text-white"} `} />
       </div>
-      {text && <p className="">{text}</p>}
+      {text && <p className="text-lg font-thin">{text}</p>}
     </div>
   );
 };
