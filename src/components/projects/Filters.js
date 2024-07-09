@@ -14,7 +14,7 @@ const Filters = ({ text, options, filters, setFilters }) => {
   };
 
   return (
-    <div className="text-left">
+    <div className="text-left w-full">
       <div>
         <div className="inline-flex w-full items-center justify-center border-2 bg-gray-300 text-xl text-gray-900 py-1 font-semibold">
           <div className="w-10/12 font-monda pl-2">Filter by {text}</div>
