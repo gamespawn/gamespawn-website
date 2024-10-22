@@ -17,7 +17,7 @@ const Navigation = () => {
       collapseOnSelect
       fixed="top"
       expand="lg"
-      className="bg-game-black flex items-center justify-between w-full"
+      className="bg-game-black flex items-center justify-between w-full max-h-16"
     >
       <Navbar.Brand className="flex items-center pl-2">
         <Link
@@ -43,34 +43,38 @@ const Navigation = () => {
             .map((item, index) => (
               <div key={index}>
                 {item.sub ? (
-                  <NavDropdown
-                    show={show}
-                    onMouseEnter={() => setShow(true)}
+                  <div
+                    className="py-3 mx-2"
                     onMouseLeave={() => setShow(false)}
-                    className="[&>*]:!bg-transparent"
-                    title={
-                      <div className="font-monda hover:!text-game-blue-100 hover:no-underline duration-300 text-white text-2xl py-2 mx-2">
-                        {item.name}
-                        <style>
-                          {`
+                  >
+                    <NavDropdown
+                      show={show}
+                      onMouseEnter={() => setShow(true)}
+                      className="[&>*]:!bg-transparent"
+                      title={
+                        <div className="font-monda hover:!text-game-blue-100 hover:no-underline duration-300 text-white text-2xl py-2.5 mx-2">
+                          {item.name}
+                          <style>
+                            {`
                             .dropdown-toggle:after {
                                 display: none;
                             }
                           `}
-                        </style>
-                      </div>
-                    }
-                  >
-                    {item.sub.map((page, index) => (
-                      <NavDropdown.Item
-                        key={index}
-                        href={page.link}
-                        className="flex justify-center font-monda bg-white !text-game-blue-100 text-xl"
-                      >
-                        {page.name}
-                      </NavDropdown.Item>
-                    ))}
-                  </NavDropdown>
+                          </style>
+                        </div>
+                      }
+                    >
+                      {item.sub.map((page, index) => (
+                        <NavDropdown.Item
+                          key={index}
+                          href={page.link}
+                          className="flex justify-center font-monda bg-white !text-game-blue-100 text-xl"
+                        >
+                          {page.name}
+                        </NavDropdown.Item>
+                      ))}
+                    </NavDropdown>
+                  </div>
                 ) : (
                   <Nav.Link
                     as={Link}
