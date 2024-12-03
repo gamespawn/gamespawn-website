@@ -39,7 +39,7 @@ const Navigation = () => {
       <Navbar.Collapse className="flex lg:justify-end justify-center items-center pr-2">
         <Nav className="flex items-center">
           {items
-            .filter((item) => item.link !== "/")
+            // .filter((item) => item.link !== "/")
             .map((item, index) => (
               <div key={index}>
                 {item.sub ? (

@@ -55,7 +55,14 @@ const CalendarEvents = () => {
 
   return (
     <section className="w-full flex justify-center items-center flex-col">
-      <Upcoming events={events.filter((e) => e.start >= new Date())} size={3} />
+      <Upcoming
+        events={events.filter(
+          (e) =>
+            e.start >= new Date() &&
+            e.start <= new Date().getTime() + 60 * 60 * 24 * 7 * 2 * 1000
+        )}
+        size={3}
+      />
       <div className="h-[100vh] w-10/12 relative my-10">
         <Calendar
           className="w-full font-russo text-2xl"
