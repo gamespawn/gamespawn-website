@@ -4,6 +4,7 @@ import About from "@/components/home/About";
 import Promote from "@/components/home/Promote";
 import Project from "@/components/home/Project";
 import ClubCards from "@/components/home/ClubCards";
+import Constitution from "@/components/home/Constitution";
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <ClubCards />
       <Promote />
       <Project />
+      <Constitution />
     </div>
   );
 };
