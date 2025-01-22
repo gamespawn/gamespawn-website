@@ -4,6 +4,9 @@ import footerLogo from "../../public/assets/footerLogo.webp";
 import { FaDiscord } from "react-icons/fa6";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
+import { SiLinktree } from "react-icons/si";
+import { IoMdLink } from "react-icons/io";
+
 import Link from "next/link";
 
 const Footer = () => {
@@ -37,7 +40,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col text-xl lg:text-5xl justify-end h-full items-center ">
-          <div className="flex flex-col h-4/6 justify-between  mb-10 ">
+          <div className="flex flex-col h-4/6 justify-between mb-10 ">
             <Link
               target="_blank"
               href="https://discord.com/invite/ejzg2Wb"
@@ -60,6 +63,22 @@ const Footer = () => {
               alt="UCR Gamespawn YouTube"
             >
               <AiFillYoutube className="transition ease-in-out hover:text hover:scale-95" />
+            </Link>
+
+            <Link
+              target="_blank"
+              href="https://linktr.ee/gamespawn"
+              alt="UCR Gamespawn Linktree"
+            >
+              <SiLinktree className="transition ease-in-out hover:text hover:scale-95" />
+            </Link>
+
+            <Link
+              target="_blank"
+              href="https://highlanderlink.ucr.edu/organization/gamespawn"
+              alt="UCR Gamespawn Highlander Link"
+            >
+              <IoMdLink className="transition ease-in-out hover:text hover:scale-95" />
             </Link>
           </div>
         </div>

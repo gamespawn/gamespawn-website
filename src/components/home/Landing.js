@@ -20,9 +20,14 @@ const Landing = () => {
           {" "}
           UCR&#39;s game development club
         </div>
-        <Link href="https://discord.com/invite/ejzg2Wb">
-          <Button text="join us" background="bg-game-blue-200" />
-        </Link>
+        <div className="flex grid grid-rows-2 gap-3">
+          <Link href="https://discord.com/invite/ejzg2Wb">
+            <Button text="join our discord!" background="bg-game-blue-200" />
+          </Link>
+          <Link href="https://discord.com/invite/ejzg2Wb">
+            <Button text="join our newsletter!" background="bg-game-blue-300" />
+          </Link>
+        </div>
       </div>
       <div className="hidden lg:block lg:w-2/12 animate-fadeIn">
         <Image className="" alt="right" src={landingright} />
