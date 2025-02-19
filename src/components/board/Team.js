@@ -1,7 +1,7 @@
 import React from "react";
 import Profile from "@/components/board/Profile";
 
-const Team = ({ yearFilters, boardData }) => {
+const Team = ({ boardData }) => {
   const filteredBoard = Object.entries(boardData)
     .map(([year, members]) => members.map((member) => ({ ...member, year }))) // Attach year to each member
     .flat();

@@ -30,7 +30,7 @@ const Page = () => {
           setFilters={setYears}
         /> */}
       </div>
-      <Team yearFilters={yearFilters} boardData={BOARD} />
+      <Team boardData={BOARD} />
     </div>
   );
 };
