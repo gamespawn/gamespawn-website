@@ -59,6 +59,15 @@ import starcrossed from "@/public/assets/projects/starcrossed.webp";
 import toy from "@/public/assets/projects/toy.webp";
 import vatican from "@/public/assets/projects/vatican.webp";
 import synthetic from "@/public/assets/projects/garden.webp";
+import orbital from "@/public/assets/projects/orbital.webp";
+import pursuit from "@/public/assets/projects/pursuit.webp";
+import catan from "@/public/assets/projects/catan.webp";
+import yuurika from "@/public/assets/projects/yuurika.webp";
+import botanist from "@/public/assets/projects/botanist.webp";
+import cross from "@/public/assets/projects/ongoing/cross.webp";
+import other from "@/public/assets/projects/ongoing/Other.webp";
+import ragdoll from "@/public/assets/projects/ongoing/ragdoll.webp";
+import split from "@/public/assets/projects/ongoing/split.webp";
 
 export const TotalProjects = [
   {
@@ -71,6 +80,9 @@ export const TotalProjects = [
     tags: ["Fantasy", "Magic"],
     schoolyear: 2019,
     downloadlink: "https://rainbowjellie.itch.io/at-the-heart-of-the-forest",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
 
   {
@@ -84,6 +96,9 @@ export const TotalProjects = [
     schoolyear: 2017,
     downloadlink:
       "https://drive.google.com/file/d/19z-mpKCXfAwERomq7mvofuSjF_IkGFvH/view?usp=sharing",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
 
   {
@@ -97,6 +112,9 @@ export const TotalProjects = [
     tags: ["3D", "RPG", "story"],
     schoolyear: 2020,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "AdvanceIQ",
@@ -109,6 +127,9 @@ export const TotalProjects = [
     tags: ["2D", "Casual", "Side-Scroller"],
     schoolyear: 2020,
     downloadlink: "https://v3.globalgamejam.org/2020/games/advanceiq-2",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Atari Adventure",
@@ -121,6 +142,9 @@ export const TotalProjects = [
     schoolyear: 2022,
     downloadlink:
       "https://v3.globalgamejam.org/2022/games/atari-adventure-1980-1",
+    personal: false,
+    ongoing: false,
+    gamejam: true,
   },
 
   {
@@ -134,6 +158,9 @@ export const TotalProjects = [
     tags: ["Fishing"],
     schoolyear: 2022,
     downloadlink: "https://devpost.com/software/online-catfish",
+    personal: false,
+    ongoing: false,
+    gamejam: true,
   },
   {
     title: "Color Bash",
@@ -146,6 +173,9 @@ export const TotalProjects = [
     tags: ["2D", "Endless Runner"],
     schoolyear: 2021,
     downloadlink: "https://devpost.com/software/color-bash",
+    personal: false,
+    ongoing: false,
+    gamejam: true,
   },
 
   {
@@ -160,6 +190,9 @@ export const TotalProjects = [
     schoolyear: 2019,
     downloadlink:
       "https://slvrchariotvii.itch.io/arcana-investigation-series-episode-1",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "A Safe Space",
@@ -173,6 +206,9 @@ export const TotalProjects = [
     tags: ["2D", "Adventure", "Platformer", "Puzzle"],
     schoolyear: 2022,
     downloadlink: "https://codebolt.itch.io/a-safe-space",
+    personal: false,
+    ongoing: false,
+    gamejam: true,
   },
   {
     title: "Binding Treasures",
@@ -192,6 +228,9 @@ export const TotalProjects = [
     tags: ["3D", "Co-op", "Multiplayer", "Puzzle", "Top-down"],
     schoolyear: 2019,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Bonds of Treasure",
@@ -211,6 +250,9 @@ export const TotalProjects = [
     tags: ["3D", "global game jam", "puzzle", "story", "unity"],
     schoolyear: 2018,
     downloadlink: "https://globalgamejam.org/2019/games/bonds-treasure",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Codename:Null",
@@ -233,6 +275,9 @@ export const TotalProjects = [
     tags: ["3D", "adventure", "RPG", "story"],
     schoolyear: 2020,
     downloadlink: "https://rainbowjellie.itch.io/codename-null",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Concord",
@@ -245,6 +290,9 @@ export const TotalProjects = [
     tags: ["3D", "ongoing"],
     schoolyear: 2018,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Creation and Conquest",
@@ -271,6 +319,9 @@ export const TotalProjects = [
     schoolyear: 2016,
     downloadlink:
       "https://drive.google.com/a/ucr.edu/file/d/0B_dRwa4KtnbWd3I1VWZUYUpYZFE/view?usp=sharing",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Cutie Hack",
@@ -289,6 +340,9 @@ export const TotalProjects = [
     schoolyear: 2016,
     downloadlink:
       "https://drive.google.com/a/ucr.edu/file/d/0B_dRwa4KtnbWTlNsaWlUb0dMYXM/view?usp=sharing",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Da Brenters",
@@ -313,6 +367,9 @@ export const TotalProjects = [
     tags: ["2D", "Action", "Adventure", "Side scroller", "Unity"],
     schoolyear: 2022,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Displaced",
@@ -325,6 +382,9 @@ export const TotalProjects = [
     tags: ["Action", "Adventure", "Side scroller", "Unity"],
     schoolyear: 2019,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
 
   {
@@ -346,6 +406,9 @@ export const TotalProjects = [
     tags: ["2D", "Global Game Jam 2019", "completed"],
     schoolyear: 2018,
     downloadlink: "https://github.com/dhoun001/ggj2019",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Germ Buster",
@@ -358,6 +421,9 @@ export const TotalProjects = [
     tags: ["2D", "Action", "Arcade"],
     schoolyear: 2019,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Grandma Please",
@@ -381,6 +447,9 @@ export const TotalProjects = [
     tags: ["Adventure", "Story", "Visual Novel"],
     schoolyear: 2020,
     downloadlink: "https://omora-games.itch.io/grandma-please",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Kaiju Insurance",
@@ -406,6 +475,9 @@ export const TotalProjects = [
     tags: ["3D", "multiplayer", "Unity"],
     schoolyear: 2019,
     downloadlink: "https://globalgamejam.org/2020/games/kaiju-insurance-9",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Line 'Em Up",
@@ -418,6 +490,9 @@ export const TotalProjects = [
     tags: ["Board Game", "3D", "Local Multiplayer"],
     schoolyear: 2021,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Marievie",
@@ -431,6 +506,9 @@ export const TotalProjects = [
     schoolyear: 2018,
     downloadlink:
       "https://drive.google.com/file/d/1HvvaGVZlei6vqI2fM9s0INY_3wdT5j6l/view?usp=sharing",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Mechanical Magic",
@@ -456,6 +534,9 @@ export const TotalProjects = [
     tags: ["RPG", "Adventure", "Story-driven", "Fantasy", "Sci-Fi"],
     schoolyear: 2021,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "My Nonsense Cat",
@@ -476,6 +557,9 @@ export const TotalProjects = [
     tags: ["3D", "RPG", "adventure", "story"],
     schoolyear: 2020,
     downloadlink: "https://am000zing.itch.io/my-nonsense-cat",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Not A Hero",
@@ -498,6 +582,9 @@ export const TotalProjects = [
     tags: ["Comedy", "Management", "Ren'Py", "Visual Novel"],
     schoolyear: 2022,
     downloadlink: "https://rusakic.itch.io/not-a-hero",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Ocean's Demise",
@@ -510,6 +597,9 @@ export const TotalProjects = [
     tags: ["2D", "horror", "rpg", "story", "ongoing"],
     schoolyear: 2018,
     downloadlink: "https://rainbowjellie.itch.io/oceans-demise",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Oracle: The Present",
@@ -523,6 +613,9 @@ export const TotalProjects = [
     schoolyear: 2018,
     downloadlink:
       "https://drive.google.com/a/ucr.edu/file/d/0B_dRwa4KtnbWd3I1VWZUYUpYZFE/view?usp=sharing",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Paleontology Simulator",
@@ -534,6 +627,9 @@ export const TotalProjects = [
     tags: ["3D", "VR", "Winter Game Jam 2019"],
     schoolyear: 2018,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Parasol",
@@ -546,6 +642,9 @@ export const TotalProjects = [
     schoolyear: 2018,
     downloadlink:
       "https://github.com/gamespawn/Parasol/releases/download/1.0/Parasol.7z",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Project S",
@@ -567,6 +666,9 @@ export const TotalProjects = [
     tags: ["2D", "Action", "Anime", "Fighting", "Pixel Art"],
     schoolyear: 2019,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Resonance",
@@ -587,6 +689,9 @@ export const TotalProjects = [
     schoolyear: 2016,
     downloadlink:
       "https://drive.google.com/a/ucr.edu/file/d/0B_dRwa4KtnbWRmpTZTg3RWpuaFk/view?usp=sharing",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Rhythm Hell",
@@ -605,6 +710,9 @@ export const TotalProjects = [
     schoolyear: 2016,
     downloadlink:
       "https://drive.google.com/a/ucr.edu/file/d/0B_dRwa4KtnbWd3I1VWZUYUpYZFE/view?usp=sharing",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "School Hero Festival",
@@ -617,6 +725,9 @@ export const TotalProjects = [
     tags: ["2D", "Anime", "Hand-drawn", "mha", "completed"],
     schoolyear: 2018,
     downloadlink: "https://mari-parasa126.itch.io/school-hero-festival",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Searchlights",
@@ -629,6 +740,9 @@ export const TotalProjects = [
     tags: ["2D", "RPG", "Unity"],
     schoolyear: 2019,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Silver Sun",
@@ -648,6 +762,9 @@ export const TotalProjects = [
     ],
     schoolyear: 2020,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Sketch",
@@ -678,6 +795,9 @@ export const TotalProjects = [
     tags: ["Adventure", "Platformer", "2D"],
     schoolyear: 2021,
     downloadlink: "https://store.steampowered.com/app/1943220/Sketch/",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Spirit Runner",
@@ -691,6 +811,9 @@ export const TotalProjects = [
     schoolyear: 2015,
     downloadlink:
       "https://drive.google.com/open?id=0B2xUFYO4YAPKUk9nQmVNa0xnSEk",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Star-Crossed",
@@ -715,6 +838,9 @@ export const TotalProjects = [
     ],
     schoolyear: 2017,
     downloadlink: "https://rainbowjellie.itch.io/star",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "The Super Epic Very Grand Totally Final Boss",
@@ -733,6 +859,9 @@ export const TotalProjects = [
     tags: ["Comedy", "Parody", "RPG Maker", "Turn-based Combat", "2D"],
     schoolyear: 2022,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Synthetic Garden",
@@ -744,6 +873,9 @@ export const TotalProjects = [
     tags: ["Gay", "LGBT", "Romance", "Yuri", "completed"],
     schoolyear: 2017,
     downloadlink: "https://rainbowjellie.itch.io/synthetic-garden",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Terminal Twilight",
@@ -764,6 +896,9 @@ export const TotalProjects = [
     schoolyear: 2017,
     downloadlink:
       "https://drive.google.com/drive/folders/0B2xUFYO4YAPKV1NlN196enhMb1E?usp=sharing",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "The Witches of Luminoire",
@@ -791,6 +926,9 @@ export const TotalProjects = [
     tags: ["Visual Novel", "Romance", "Comedy", "Slice of Life", "2D"],
     schoolyear: 2021,
     downloadlink: "https://am000zing.itch.io/the-witches-of-luminoire",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Toy Factory",
@@ -810,6 +948,9 @@ export const TotalProjects = [
     schoolyear: 2018,
     downloadlink:
       "https://github.com/LadyEbony/steampunk_teddies/raw/master/Build.zip",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "U.A. Matching Game",
@@ -821,6 +962,9 @@ export const TotalProjects = [
     tags: ["2D", "Anime", "Hand-drawn", "mha", "completed"],
     schoolyear: 2017,
     downloadlink: "https://mari-parasa126.itch.io/ua-matching-game",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Vatican",
@@ -847,6 +991,9 @@ export const TotalProjects = [
     tags: ["Horror", "Text-based"],
     schoolyear: 2021,
     downloadlink: "",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "You See Girls",
@@ -868,6 +1015,9 @@ export const TotalProjects = [
     tags: ["2D", "Visual Novel", "Romance"],
     schoolyear: 2019,
     downloadlink: "https://am000zing.itch.io/you-see-girls",
+    personal: false,
+    ongoing: false,
+    gamejam: false,
   },
   {
     title: "Bubble Shift",
@@ -880,6 +1030,9 @@ export const TotalProjects = [
     tags: ["Platformer"],
     schoolyear: 2023,
     downloadlink: "https://dalosadev.itch.io/bubble-shift",
+    personal: false,
+    ongoing: false,
+    gamejam: true,
   },
   {
     title: "Catch These Hands",
@@ -891,6 +1044,9 @@ export const TotalProjects = [
     tags: ["2D Platformer"],
     schoolyear: 2024,
     downloadlink: "https://wesm.itch.io/catch-these-hands",
+    personal: false,
+    ongoing: false,
+    gamejam: true,
   },
   {
     title: "Clown Chaos",
@@ -903,6 +1059,9 @@ export const TotalProjects = [
     tags: ["Action"],
     schoolyear: 2024,
     downloadlink: "https://merkel03.itch.io/clown-chaos",
+    personal: false,
+    ongoing: false,
+    gamejam: true,
   },
   {
     title: "Guitar Hina",
@@ -914,6 +1073,9 @@ export const TotalProjects = [
     tags: ["Anime", "Rhythm"],
     schoolyear: 2023,
     downloadlink: "https://saladofeggs.itch.io/guitar-hina",
+    personal: false,
+    ongoing: false,
+    gamejam: true,
   },
   {
     title: "Live Laugh Die",
@@ -925,6 +1087,9 @@ export const TotalProjects = [
     tags: ["2D", "Action", "Bullet Hell"],
     schoolyear: 2023,
     downloadlink: "https://almondcrumbs.itch.io/live-laugh-die",
+    personal: false,
+    ongoing: false,
+    gamejam: true,
   },
   {
     title: "Seed of Light",
@@ -953,6 +1118,9 @@ export const TotalProjects = [
     tags: ["Platformer", "Puzzle", "2D"],
     schoolyear: 2023,
     downloadlink: "https://chaffeygamedev.itch.io/seed-of-light",
+    personal: false,
+    ongoing: false,
+    gamejam: true,
   },
   {
     title: "Taking Root of the West",
@@ -965,6 +1133,146 @@ export const TotalProjects = [
     tags: ["Mystery", "Puzzle", "Western", "2D"],
     schoolyear: 2023,
     downloadlink: "https://ding0dongo.itch.io/taking-root-of-the-west",
+    personal: false,
+    ongoing: false,
+    gamejam: true,
+  },
+  {
+    title: "Orbital",
+    thumbnail: orbital,
+    team: ["Thomas Li"],
+    email: "tli186@ucr.edu",
+    platforms: ["PC"],
+    description:
+      "A game where you shoot enemies (in space) with your orbitals and try not to get hit by your enemies.",
+    tags: ["Space", "Shooter"],
+    schoolyear: 2019,
+    downloadlink: "https://novasagittarii.github.io/w1-h2018/",
+    personal: true,
+    ongoing: false,
+    gamejam: false,
+  },
+  {
+    title: "Pursuit of the Truth",
+    thumbnail: pursuit,
+    team: ["Flora Huang"],
+    email: "fhuan048@ucr.edu",
+    platforms: ["PC"],
+    description:
+      "A point-and-click visual novel. In the modern city of London, university student Mia Morgan is just trying to get by. She studies, works, oversleeps, and is about as ordinary as you can get. So how is it that she ended up having to work with one of the best detectives in London to prove her innocence for a crime she never committed? Investigate your surroundings, piece together evidence, and uncover the truth! Demo includes the first chapter. ",
+    tags: [
+      "Crime",
+      "Detective",
+      "Female Protagonist",
+      "Point & Click",
+      "Ren'Py",
+    ],
+    schoolyear: 2021,
+    downloadlink: "https://4kstarri.itch.io/pursuit-of-the-truth",
+    personal: true,
+    ongoing: false,
+    gamejam: false,
+  },
+  {
+    title: "Realtime Catan",
+    thumbnail: catan,
+    team: ["Thomas Li"],
+    email: "tli186@ucr.edu",
+    platforms: ["PC"],
+    description:
+      "This is a multiplayer game server implementation of the board game catan, but in realtime. Made with sockets.io, HTML, CSS, and Javascript. Differences from the Board Game: Everyone rolls at the same time, with a cooldown on each player's rolls. Ports and player trading not implemented, but you can trade 4 for 1. Robber is a temporary status that disables a resource node for a set period of time, there can be multiple active robbers at a time.",
+    tags: ["Board", "Catan", "Multiplayer"],
+    schoolyear: 2023,
+    downloadlink: "https://cypress-rtc.glitch.me/",
+    personal: true,
+    ongoing: false,
+    gamejam: false,
+  },
+  {
+    title: "The Traveling Botanist",
+    thumbnail: botanist,
+    team: ["Jessica Wei", "Justin Cheung", "Ariel Nam"],
+    email: "jecwei@ucsc.edu",
+    platforms: ["PC"],
+    description:
+      "Rejuvenate barren lands and bring nature back to the world in this satisfying puzzle game! Brought to you by BotaniSlammers.",
+    tags: ["Puzzle"],
+    schoolyear: 2021,
+    downloadlink: "https://jessuka.itch.io/the-traveling-botanist",
+    personal: true,
+    ongoing: false,
+    gamejam: false,
+  },
+  {
+    title: "Yuurika",
+    thumbnail: yuurika,
+    team: ["Thomas Li"],
+    email: "tli186@ucr.edu",
+    platforms: ["PC"],
+    description: "Yuurika Game Engine. Multiplayer team-based space shooter.",
+    tags: ["Multiplayer", "Space", "Shooter"],
+    schoolyear: 2018,
+    downloadlink: "https://yuurika.glitch.me/",
+    personal: true,
+    ongoing: false,
+    gamejam: false,
+  },
+  {
+    title: "Cross Campus",
+    thumbnail: cross,
+    team: [""],
+    email: "",
+    platforms: [""],
+    description: "Yuurika Game Engine. Multiplayer team-based space shooter.",
+    tags: [""],
+    schoolyear: 0,
+    downloadlink: "",
+    personal: false,
+    ongoing: true,
+    gamejam: false,
+  },
+  {
+    title: "There Is No Other Side",
+    description: "Psychological Horror Game with an inconsistent narrator.",
+    thumbnail: other,
+    team: [""],
+    email: "",
+    platforms: [""],
+    tags: [""],
+    schoolyear: 0,
+    downloadlink: "",
+    personal: false,
+    ongoing: true,
+    gamejam: false,
+  },
+  {
+    title: "Ragdoll",
+    description: "A little cat in a weird world.",
+    thumbnail: ragdoll,
+    team: [""],
+    email: "",
+    platforms: [""],
+    tags: [""],
+    schoolyear: 0,
+    downloadlink: "",
+    personal: false,
+    ongoing: true,
+    gamejam: false,
+  },
+  {
+    title: "Lickety Split",
+    description:
+      "Lickety Split is an RPG set in the 2000s in a little place called Old Town that believes it's actually the 1700s. This town faces the threat of destruction to make way for a parking lot for Water Works, an evil company that specializes in making water balloons. With the approval of an Old Geezer, a revolver in one hand, and a water gun in the other, Bee sets out to save their town.",
+    thumbnail: split,
+    team: [""],
+    email: "",
+    platforms: [""],
+    tags: [""],
+    schoolyear: 0,
+    downloadlink: "",
+    personal: false,
+    ongoing: true,
+    gamejam: false,
   },
 ];
 export default TotalProjects;
