@@ -27,6 +27,10 @@ export const items = [
     ],
   },
   {
+    name: "tech talks",
+    link: "/ttalks",
+  },
+  {
     name: "assets",
     link: "https://drive.google.com/drive/u/1/folders/1CORrAKgDflCeiEvgjaC63eKB_J64dpC0",
   },
